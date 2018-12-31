@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="home">
+
+<head>
+<link rel="stylesheet"  href="style.css">
+<title>Homepage</title>
+<meta charset="utf-8">
+
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+  $(document).ready(function(){
+
+    $("#label1").hide();
+    $("#label2").hide();
+    $("#label3").hide();
+    $("#label4").hide();
+
+    $("#shape1").mouseenter(function() {
+      $("#label1").fadeIn();
+    });
+    $("#shape1").mouseleave(function() {
+      $("#label1").fadeOut();
+    });
+
+    $("#shape2").mouseenter(function() {
+      $("#label2").fadeIn();
+    });
+    $("#shape2").mouseleave(function() {
+      $("#label2").fadeOut();
+    });
+
+    $("#shape3").mouseenter(function() {
+      $("#label3").fadeIn();
+    });
+    $("#shape3").mouseleave(function() {
+      $("#label3").fadeOut();
+    });
+
+    $("#shape4").mouseenter(function() {
+      $("#label4").fadeIn();
+    });
+    $("#shape4").mouseleave(function() {
+      $("#label4").fadeOut();
+    });
+
+
+  });
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="container1">
+  <div id="shape1"></div>
+  <div id="label1">HOME</div>
+</div>
+
+<div class="container2">
+  <div id="shape2"></div>
+  <div id="label2">ABOUT</div>
+</div>
+
+<div class="container3">
+  <div id="shape3"></div>
+  <div id="label3">PROJECTS</div>
+</div>
+
+<div class="container4">
+  <div id="shape4"></div>
+  <div id="label4">RESUME</div>
+</div>
+
+
+
+<main>
+
+<div id="introText">Hello, I&apos;m Nabeel Asghar</div>
+
+
+</main>
+
+</body>
+
+</html>
