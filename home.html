@@ -15,19 +15,39 @@
     $("#label3").hide();
     $("#label4").hide();
 
+
     $("#shape1").mouseenter(function() {
       $("#label1").fadeIn();
+
+      $("#shape1").on("click", function(){
+        $('html, body').animate({
+          scrollTop: 0
+        }, 1000);
+
+      });
+      return false;
     });
+
     $("#shape1").mouseleave(function() {
       $("#label1").fadeOut();
     });
 
+
     $("#shape2").mouseenter(function() {
       $("#label2").fadeIn();
+
+      $("#shape2").on("click", function(){
+        $('html, body').animate({
+          scrollTop: $("#about").offset().top
+        }, 1000);
+
+      });
+      return false;
     });
     $("#shape2").mouseleave(function() {
       $("#label2").fadeOut();
     });
+
 
     $("#shape3").mouseenter(function() {
       $("#label3").fadeIn();
@@ -35,6 +55,7 @@
     $("#shape3").mouseleave(function() {
       $("#label3").fadeOut();
     });
+
 
     $("#shape4").mouseenter(function() {
       $("#label4").fadeIn();
@@ -51,7 +72,7 @@
 </head>
 
 <body>
-
+<div id="homepage"></div>
 <div class="container1">
   <div id="shape1"></div>
   <div id="label1">HOME</div>
@@ -72,12 +93,20 @@
   <div id="label4">RESUME</div>
 </div>
 
-
-
 <main>
 
 <div id="introText">Hello, I&apos;m Nabeel Asghar</div>
 
+<br><br><br><br><br><br><br><br><br>
+<br><br><br>
+
+<div id ="about">
+<p>ABOUT ME</p>
+
+<br>
+<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
 
 </main>
 

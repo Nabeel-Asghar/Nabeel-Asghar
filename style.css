@@ -1,21 +1,21 @@
 
 html {
+	overflow-x:hidden;
 	overflow-y: scroll;
 	font-family: "Courier New", Courier, monospace;
 }
 
 body{
 	font-family: "Courier New", Courier, monospace;
-	background-image: url(pictures/gradient.jpg)
+	background-image: url(pictures/gradient.jpg);
+	margin: 0;
+	padding: 0;
 }
 
 main{
 	width: 100%;
-	margin-left: 17%;
 	font-size: 30px;
 	font-family: "Courier New", Courier, monospace;
-	margin-left: ; /* Same as the width of the sidebar */
-	padding: 0px 10px;
 }
 
 .container1 {
@@ -79,7 +79,7 @@ main{
 	float:right;
 	color: white;
 	margin-right: 35%;
-	font-size: 25px;
+	font-size: 1.6vw;
 	overflow: hidden;
 	float:right;
 }
@@ -100,7 +100,7 @@ main{
 	float:right;
 	color: white;
 	margin-right: 22%;
-	font-size: 25px;
+	font-size: 1.6vw;
 	overflow: hidden;
 	float:right;
 }
@@ -121,7 +121,7 @@ main{
 	float:right;
 	color: white;
 	margin-right: 10%;
-	font-size: 25px;
+	font-size: 1.6vw;
 	overflow: hidden;
 }
 
@@ -141,7 +141,7 @@ main{
 	float:right;
 	color: white;
 	margin-right: 20%;
-	font-size: 25px;
+	font-size: 1.6vw;
 	overflow: hidden;
 }
 
@@ -149,4 +149,17 @@ main{
 	margin-top: 20%;
 	font-size: 4vw;
 	color: white;
+	margin-left: 17%;
+}
+
+#about{
+	background-image: url(pictures/detroit4.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-top: 1%;
+	padding: 0px;
+	body: 0px;
+	margin: 0;
+
+
 }
