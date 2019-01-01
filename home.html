@@ -10,17 +10,17 @@
 <script>
   $(document).ready(function(){
 
-    $("#introText").hide().fadeIn(2000);
-    $("#belowText").hide().delay(1000).fadeIn(2000);
+    $("#introText").hide().fadeIn(1000);
+    $("#belowText").hide().delay(1000).fadeIn(1300);
 
-    $("#label1").hide().delay(2700).fadeIn(1000);
-    $("#label1").fadeOut(2000);
-    $("#label2").hide().delay(3700).fadeIn(1000);
-    $("#label2").fadeOut(2000);
-    $("#label3").hide().delay(4700).fadeIn(1000);
-    $("#label3").fadeOut(2000);
-    $("#label4").hide().delay(5700).fadeIn(1000);
-    $("#label4").fadeOut(2000);
+    $("#label1").hide().delay(2000).fadeIn(700);
+    $("#label1").fadeOut(1800);
+    $("#label2").hide().delay(3000).fadeIn(700);
+    $("#label2").fadeOut(1800);
+    $("#label3").hide().delay(4000).fadeIn(700);
+    $("#label3").fadeOut(1800);
+    $("#label4").hide().delay(5000).fadeIn(700);
+    $("#label4").fadeOut(1800);
 
     $("#shape1").mouseenter(function() {
       $("#label1").fadeIn();
@@ -57,6 +57,14 @@
 
     $("#shape3").mouseenter(function() {
       $("#label3").fadeIn();
+
+      $("#shape3").on("click", function(){
+        $('html, body').animate({
+          scrollTop: $("#projects").offset().top
+        }, 1000);
+
+      });
+      return false;
     });
     $("#shape3").mouseleave(function() {
       $("#label3").fadeOut();
@@ -105,7 +113,7 @@
 <div id="belowText">Software, Coding, IT</div>
 
 <br><br><br><br><br><br><br><br><br>
-<br><br><br>
+<br>
 
 <div id ="about">
 <p><div id = "small"><i><center><br><br><br><br><br>Discover who I am and everything about</center></i></div>
@@ -120,7 +128,20 @@
 
 
 <br>
-<br><br>
+<br><br><br><br><br>
+</div>
+
+
+<div id="projects"><br>
+
+<div id="fixProject">
+<p><div id = "small"><i><center><br><br>My work as a coder</center></i></div>
+<center><div id = "big"><b><br><br>MY C++ AND PYTHON PROJECTS<br><br><br><br><br><br><br><br></b></div></center></p>
+<p>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</div>
 
 </div>
 </main>

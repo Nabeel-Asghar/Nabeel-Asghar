@@ -171,6 +171,13 @@ main{
 	margin: 0;
 }
 
+#projects{
+	background-image: url(pictures/code.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: #dbdde0;
+}
+
 #small{
 	font-size: 2vw;
 	color: white;
@@ -180,6 +187,10 @@ main{
 	font-size: 4.5vw;
 	color: white;
 	line-height:25px;
+}
+
+#fixProject{
+	margin-bottom: 20%;
 }
 
 p{
