@@ -176,6 +176,8 @@ main{
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-color: #dbdde0;
+	height: 100%;
+	width: 100%;
 }
 
 #small{
@@ -196,4 +198,113 @@ main{
 p{
 	margin-left: 25%;
 	margin-right: 25%;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+	background-color: #dbdde0;
+}
+
+.leftimage{
+	border-radius: 0%;
+	width: 75%;
+	height: 75%;
+	border: 1px solid black;
+	margin-left: 27%;
+	transition: .8s ease;
+  backface-visibility: hidden;
+	opacity: 1;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+	margin-left: 14%;
+}
+
+.middle1 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+	margin-left: 6%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+	margin-left: 0.5%;
+}
+
+.middle2 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 39%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.container {
+  position: relative;
+}
+
+.container:hover .leftimage {
+  opacity: 0.3;
+}
+
+.container:hover .middleimage {
+  opacity: 0.3;
+}
+
+.container:hover .rightimage {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.container:hover .middle1 {
+  opacity: 1;
+}
+
+.container:hover .middle2 {
+  opacity: 1;
+}
+
+.text {
+  background-color: ; /* Add background color for textboc here*/
+  color: white;
+  font-size: 2vw;
+}
+
+.middleimage{
+	border-radius: 0%;
+	width: 75%;
+	height: 75%;
+	border: 0px solid white;
+	transition: .8s ease;
+	backface-visibility: hidden;
+	opacity: 1;
+}
+
+.rightimage{
+	border-radius: 0%;
+	width: 75%;
+	height: 75%;
+	border: 0px solid white;
+	margin-right: 25%;
+	transition: .8s ease;
+	backface-visibility: hidden;
+	opacity: 1;
 }
