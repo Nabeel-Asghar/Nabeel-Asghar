@@ -150,16 +150,39 @@ main{
 	font-size: 4vw;
 	color: white;
 	margin-left: 17%;
+	margin-bottom: 0;
+}
+
+#belowText{
+	margin-top: 2%;
+	font-size: 2vw;
+	color: white;
+	margin-left: 50.5%;
 }
 
 #about{
 	background-image: url(pictures/detroit4.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
+	background-color: #dbdde0;
 	margin-top: 1%;
 	padding: 0px;
 	body: 0px;
 	margin: 0;
+}
 
+#small{
+	font-size: 2vw;
+	color: white;
+}
 
+#big{
+	font-size: 4.5vw;
+	color: white;
+	line-height:25px;
+}
+
+p{
+	margin-left: 25%;
+	margin-right: 25%;
 }

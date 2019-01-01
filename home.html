@@ -3,18 +3,24 @@
 
 <head>
 <link rel="stylesheet"  href="style.css">
-<title>Homepage</title>
+<title>Nabeel Asghar</title>
 <meta charset="utf-8">
 
 <script src="jquery-3.3.1.min.js"></script>
 <script>
   $(document).ready(function(){
 
-    $("#label1").hide();
-    $("#label2").hide();
-    $("#label3").hide();
-    $("#label4").hide();
+    $("#introText").hide().fadeIn(2000);
+    $("#belowText").hide().delay(1000).fadeIn(2000);
 
+    $("#label1").hide().delay(2700).fadeIn(1000);
+    $("#label1").fadeOut(2000);
+    $("#label2").hide().delay(3700).fadeIn(1000);
+    $("#label2").fadeOut(2000);
+    $("#label3").hide().delay(4700).fadeIn(1000);
+    $("#label3").fadeOut(2000);
+    $("#label4").hide().delay(5700).fadeIn(1000);
+    $("#label4").fadeOut(2000);
 
     $("#shape1").mouseenter(function() {
       $("#label1").fadeIn();
@@ -96,18 +102,27 @@
 <main>
 
 <div id="introText">Hello, I&apos;m Nabeel Asghar</div>
+<div id="belowText">Software, Coding, IT</div>
 
 <br><br><br><br><br><br><br><br><br>
 <br><br><br>
 
 <div id ="about">
-<p>ABOUT ME</p>
+<p><div id = "small"><i><center><br><br><br><br><br>Discover who I am and everything about</center></i></div>
+<center><div id = "big"><b><br><br>MY ASPIRATIONS AND PERSONALITY<br><br><br><br><br><br></b></div></center>
+</p>
+
+
+
+<p>I am a student at <b>WAYNE STATE UNIVERSITY.</b></p>
+<p>I am a resident of <b>DETROIT.</b></p>
+<p>I like to play <b>SCOOTER</b> around and <b>READ</b> in my free time.</p>
+
 
 <br>
-<br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br>
-</div>
+<br><br>
 
+</div>
 </main>
 
 </body>
