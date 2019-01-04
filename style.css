@@ -23,12 +23,10 @@ body{
   z-index: -1;
 }
 
-
 main{
 	width: 100%;
 	font-size: 30px;
 	font-family: "Courier New", Courier, monospace;
-
 }
 
 .container1 {
@@ -51,7 +49,6 @@ main{
   top: 0; /* Stay at the top */
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
-
 }
 
 .container3 {
@@ -170,7 +167,7 @@ main{
 	margin-top: 2%;
 	font-size: 2vw;
 	color: white;
-	margin-left: 50.5%;
+	margin-left: 45%;
 }
 
 #about{
@@ -201,7 +198,7 @@ main{
 #big{
 	font-size: 4.5vw;
 	color: white;
-	line-height:25px;
+	line-height:25%;
 }
 
 #fixProject{
@@ -330,4 +327,31 @@ p{
 
 #resume{
 	background-color: #dbdde0;
+}
+
+#column1{
+	float: left;
+}
+
+.column1 {
+  float: left;
+}
+
+.left {
+	margin-left: 1%;
+  width: 45%;
+	float: left;
+}
+
+.right {
+	margin-right:10%;
+  width: 44%;
+	float: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
