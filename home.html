@@ -11,16 +11,16 @@
   $(document).ready(function(){
 
     $("#introText").hide().fadeIn(1000);
-    $("#belowText").hide().delay(1000).fadeIn(1300);
+    $("#belowText").hide().delay(1000).fadeIn(1000);
 
-    $("#label1").hide().delay(2000).fadeIn(700);
-    $("#label1").fadeOut(1500);
-    $("#label2").hide().delay(3000).fadeIn(700);
-    $("#label2").fadeOut(1500);
-    $("#label3").hide().delay(4000).fadeIn(700);
-    $("#label3").fadeOut(1500);
-    $("#label4").hide().delay(5000).fadeIn(700);
-    $("#label4").fadeOut(1500);
+    $("#label1").hide().delay(1200).fadeIn(700);
+    $("#label1").fadeOut(800);
+    $("#label2").hide().delay(1700).fadeIn(700);
+    $("#label2").fadeOut(800);
+    $("#label3").hide().delay(2200).fadeIn(700);
+    $("#label3").fadeOut(800);
+    $("#label4").hide().delay(2700).fadeIn(700);
+    $("#label4").fadeOut(800);
 
     $("#shape1").mouseenter(function() {
       $("#label1").fadeIn();
@@ -73,6 +73,13 @@
 
     $("#shape4").mouseenter(function() {
       $("#label4").fadeIn();
+      $("#shape4").on("click", function(){
+        $('html, body').animate({
+          scrollTop: $("#resume").offset().top
+        }, 1000);
+
+      });
+      return false;
     });
     $("#shape4").mouseleave(function() {
       $("#label4").fadeOut();
@@ -115,6 +122,10 @@
 <div id="introText">Hello, I&apos;m Nabeel Asghar</div>
 <div id="belowText">Software, Coding, IT</div>
 
+<video autoplay muted loop id="myVideo">
+  <source src="Pictures/Inception.mp4" type="video/mp4">
+</video>
+
 <br><br><br><br><br><br><br><br><br>
 <br>
 
@@ -124,10 +135,10 @@
 </p>
 
 
-
+<br>
 <p>I am a student at <b>WAYNE STATE UNIVERSITY.</b></p>
 <p>I am a resident of <b>DETROIT.</b></p>
-<p>I like to play <b>SCOOTER</b> around and <b>READ</b> in my free time.</p>
+<p>I like to <b>SCOOTER</b> around and <b>READ</b> in my free time.</p>
 
 
 <br>
@@ -151,6 +162,7 @@
        <div class="middle">
         <div class="text"><b>CALCULATOR</b></div>
       </div>
+    </a>
     </div>
   </div>
 
@@ -161,6 +173,7 @@
        <div class="middle1">
         <div class="text"><b>WEBSITE</b></div>
       </div>
+    </a>
     </div>
   </div>
 
@@ -171,12 +184,21 @@
        <div class="middle2">
         <div class="text"><b>ALGORITHMS</b></div>
       </div>
+    </a>
     </div>
   </div>
 
 </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
 </div>
 
+<div id = "resume">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
 
 </main>
 

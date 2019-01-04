@@ -10,12 +10,25 @@ body{
 	background-image: url(pictures/gradient.jpg);
 	margin: 0;
 	padding: 0;
+	background-vide
 }
+
+#myVideo {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0;
+  top: -9%;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
 
 main{
 	width: 100%;
 	font-size: 30px;
 	font-family: "Courier New", Courier, monospace;
+
 }
 
 .container1 {
@@ -251,11 +264,13 @@ p{
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-
 }
+
 
 .container {
   position: relative;
+	width: 100%;
+	height: 100%;
 }
 
 .container:hover .leftimage {
@@ -286,6 +301,10 @@ p{
   background-color: ; /* Add background color for textboc here*/
   color: white;
   font-size: 2vw;
+	border:3px;
+	border-style:solid;
+	border-color:white;
+	padding: 5px;
 }
 
 .middleimage{
@@ -307,4 +326,8 @@ p{
 	transition: .8s ease;
 	backface-visibility: hidden;
 	opacity: 1;
+}
+
+#resume{
+	background-color: #dbdde0;
 }
