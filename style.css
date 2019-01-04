@@ -7,7 +7,7 @@ html {
 
 body{
 	font-family: "Courier New", Courier, monospace;
-	background-image: url(pictures/gradient.jpg);
+	background-image: url(PICTURES/gradient.jpg);
 	margin: 0;
 	padding: 0;
 	background-vide
@@ -182,7 +182,7 @@ main{
 }
 
 #projects{
-	background-image: url(pictures/code.jpg);
+	background-image: url(ftp://h6iudx7gtwvb@107.180.56.149/public_html/PICTURES/code.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-color: #dbdde0;
