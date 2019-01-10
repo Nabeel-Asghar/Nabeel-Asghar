@@ -10,7 +10,6 @@ body{
 	background-image: url(PICTURES/gradient.jpg);
 	margin: 0;
 	padding: 0;
-	background-vide
 }
 
 #myVideo {
@@ -171,7 +170,7 @@ main{
 }
 
 #about{
-	background-image: url(pictures/detroit4.jpg);
+	background-image: url(PICTURES/detroit4.JPG);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-color: #dbdde0;
@@ -182,7 +181,7 @@ main{
 }
 
 #projects{
-	background-image: url(ftp://h6iudx7gtwvb@107.180.56.149/public_html/PICTURES/code.jpg);
+	background-image: url(PICTURES/code.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-color: #dbdde0;
@@ -208,6 +207,7 @@ main{
 p{
 	margin-left: 25%;
 	margin-right: 25%;
+	font-size: 2vw;
 }
 
 .column {
@@ -245,7 +245,6 @@ p{
   position: absolute;
   top: 50%;
   left: 50%;
-	margin-left: 6%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
@@ -327,26 +326,25 @@ p{
 
 #resume{
 	background-color: #dbdde0;
-}
+	height: 100%;
+	width: 100%;
 
-#column1{
-	float: left;
 }
 
 .column1 {
   float: left;
+  padding: 10px;
 }
 
 .left {
-	margin-left: 1%;
-  width: 45%;
-	float: left;
+  width: 25%;
+  margin-left: 15%;
+	margin-right: 2%;
+	text-align: left;
 }
 
 .right {
-	margin-right:10%;
-  width: 44%;
-	float: right;
+  width: 45%;
 }
 
 /* Clear floats after the columns */
@@ -354,4 +352,9 @@ p{
   content: "";
   display: table;
   clear: both;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
 }
