@@ -72,6 +72,7 @@ main{
   overflow-x: hidden; /* Disable horizontal scroll */
 }
 
+
 #shape4 {
 	background-color: #c1c1c1	;
 	height: 55%;
@@ -328,7 +329,6 @@ p{
 	background-color: #dbdde0;
 	height: 100%;
 	width: 100%;
-
 }
 
 .column1 {
@@ -357,4 +357,10 @@ p{
 .responsive {
   max-width: 100%;
   height: auto;
+}
+
+#footer{
+	background-color: white;
+	height: 100%;
+	width: 100%;
 }
