@@ -167,7 +167,7 @@ main{
 }
 
 #introText{
-	font-size: 4vw;
+	font-size: 60px;
 	color: white;
 	position: absolute;
 	top: 40%;
@@ -177,7 +177,8 @@ main{
 }
 
 #belowText{
-	font-size: 2vw;
+	margin-top: 2%;
+	font-size: 30px;
 	color: white;
 	position: absolute;
 	top: 50%;
@@ -195,7 +196,6 @@ main{
 	padding: 0px;
 	body: 0px;
 	margin: 0;
-
 }
 
 #projects{
@@ -218,16 +218,28 @@ main{
 	line-height:25%;
 }
 
+#small1{
+	font-size: 2vw;
+	line-height: 250%;
+	color: white;
+}
+
+#big1{
+	font-size: 4.5vw;
+	color: white;
+	line-height:100%;
+}
+
 #fixProject{
 	margin-bottom: 10%;
 }
 
 #abouttext{
 	font-size: 28px;
-	margin-left: 20%;
-	margin-right: 20%;
-	margin-top: 6%;
-	line-height: 40px;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 13%;
+	line-height: 150%;
 }
 
 .column {
@@ -281,7 +293,6 @@ main{
   -ms-transform: translate(-50%, -50%);
 }
 
-
 .container {
   position: relative;
 	width: 100%;
@@ -315,7 +326,7 @@ main{
 .text {
   background-color: ; /* Add background color for textboc here*/
   color: white;
-  font-size: 1.5vw;
+  font-size: 2vw;
 	border:3px;
 	border-style:solid;
 	border-color:white;
@@ -354,6 +365,27 @@ main{
   padding: 10px;
 }
 
+.column2 {
+  float: left;
+  padding: 10px;
+}
+
+.l {
+  width: 25%;
+  margin-left: 15%;
+	margin-right: 2%;
+	text-align: left;
+}
+
+.r {
+  width: 45%;
+	margin-left: 2%;
+}
+
+.textContainer{
+	text-align: left;
+}
+
 .left {
   width: 25%;
   margin-left: 15%;
@@ -363,6 +395,7 @@ main{
 
 .right {
   width: 45%;
+	margin-left: 2%;
 }
 
 /* Clear floats after the columns */
@@ -372,10 +405,12 @@ main{
   clear: both;
 }
 
-.responsive {
-  max-width: 100%;
-  height: auto;
+.resumeimage{
+	width: 100%;
+	min-width:230px;
+	border-radius: 7%;
 }
+
 
 #footer{
 	background-color: white;
@@ -385,11 +420,19 @@ main{
 
 /* Clear floats after the columns */
 .columnOne {
-	margin-left: 5%;
   float: left;
-  width: 12.5%;
 	background-color: white;
+	width:49%;
+
 }
+
+.linkedin{
+	float:right;
+}
+.facebook{
+	margin-left: 3%;
+}
+
 
 .overlay {
   position: absolute;
@@ -406,4 +449,127 @@ main{
 
 .container:hover .overlay {
   opacity: .5;
+}
+
+@media screen and (max-width: 800px) {
+    .container1, .container2, .container3, .container4{
+        display:none;
+    }
+		#belowText{
+			margin-top: 12%;
+			font-size: 25px;
+		}
+		#introText{
+			font-size: 45px;
+		}
+		#small{
+			display: none;
+		}
+		#big{
+			position: relative;
+			font-size: 8vw;
+			line-height: 40%;
+			top: 80px;
+		}
+		#about{
+			background-image: url(PICTURES/detroit5.JPG);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-color: #dbdde0;
+			margin-top: 1%;
+			padding: 0px;
+			body: 0px;
+			margin: 0;
+		}
+		#abouttext{
+			position: static;
+			top: 60px;
+			font-size: 25px;
+			line-height: 120%;
+			margin-top: 25%;
+			margin-left: 10%;
+			margin-right: 10%;
+		}
+		.column{
+			width: 100%;
+		  float: left;
+		}
+		.leftimage{
+			margin: 0;
+
+		}
+		.middleimage{
+			margin: 0;
+
+		}
+		.rightimage{
+			margin: 0;
+
+		}
+		.text{
+			font-size: 4vw;
+		}
+		.middle{
+			margin-left: 0;
+		}
+		.middle2{
+			left: 50%;
+		}
+		#projects{
+			background-image: url(PICTURES/code1.jpg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-color: white;
+			width: 100%;
+			display:block;
+		}
+		#small, #small1{
+			display:none;
+		}
+		#big, #big1{
+			position: relative;
+			font-size: 8vw;
+			line-height: ;
+			top: -40px;
+		}
+
+		.left{
+			width: 100%;
+			float:left;
+			margin-left: -1.5%;
+		}
+
+		.left img{
+			width: 425px;
+			margin: 0;
+		}
+
+		.right{
+			width: 100%;
+			float:left;
+		}
+
+		.textContainer{
+			width: 400px;
+			text-align: left;
+			margin-left: -5%;
+		}
+
+
+		.l{
+			width: 100%;
+			float:left;
+			margin-left: 0;
+		}
+
+		.l img{
+			width: 425px;
+			margin: 0;
+		}
+
+		.r {
+			width: 100%;
+			float:left;
+		}
+
 }

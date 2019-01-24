@@ -6,7 +6,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <title>Nabeel Asghar</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="jquery-3.3.1.min.js"></script>
 <script>
   $(document).ready(function(){
@@ -35,10 +35,7 @@
       return false;
     });
 
-    $("#small").animate({opacity:0});
-    $(document).scroll(function() {
-      $("#small").animate({opacity:1});
-    });
+
 
 
 
@@ -135,14 +132,17 @@
 </div>
 
 <div id ="about">
-<div id = "small"><i><center><br><br><br><br><br>Discover who I am and everything about</center></i></div>
-<center><div id = "big"><b><br><br>MY ASPIRATIONS AND PERSONALITY<br><br><br><br><br><br></b></div></center>
+  <br><br><br>
+<div id = "small1"><i><center>Discover me and everything about me.</center></i></div>
+<center><div id = "big1"><b>WHO AM I?</b></div></center>
 
 <div id ="abouttext">
-<p>I am a student at <b>Wayne State University.</b> I am a resident
-  of the city of <b>Detroit.</b> I love to <b>read</b> and am always open to
-  book recommendations. Currently, I am working as an
-  <b>IT Infrastructure Intern</b> at Blue Cross Blue Shield.
+  <center>
+<p>I am a student at <b>Wayne State University.</b> I live around
+  the city of <b>Detroit.</b> I love to <b>read</b> and am
+  always open to book recommendations. Currently, I am working
+  as an <b>IT Infrastructure Intern</b> at Blue Cross Blue Shield.
+</center>
 </div>
 
 <br>
@@ -152,8 +152,8 @@
 <div id="projects"><br>
 
 <div id="fixProject">
-<p><div id = "small"><i><center><br>My work as a coder</center></i></div>
-<center><div id = "big"><b><br><br>MY C++ AND PYTHON PROJECTS</b></div></center></p>
+<p><div id = "small"><i><center><br>My work as a programmer</center></i></div>
+<center><div id = "big"><b><br><br>MY CODING PROJECTS</b></div></center></p>
 </div>
 
 <div class="row">
@@ -161,7 +161,7 @@
   <div class="column">
     <div class="container">
       <center><img src="PICTURES/calc.JPG" class="leftimage"></center>
-      <a href="https://github.com/Nabeel-Asghar/Calculator">
+      <a href="https://github.com/Nabeel-Asghar/Calculator"  target="_blank">
        <div class="middle">
         <div class="text"><b>CALCULATOR</b></div>
       </div>
@@ -172,7 +172,7 @@
   <div class="column">
     <div class="container">
       <center><img src="PICTURES/library.jpg" class="middleimage"></center>
-       <a href="https://github.com/Nabeel-Asghar/Website">
+       <a href="https://github.com/Nabeel-Asghar/Website"  target="_blank">
        <div class="middle1">
         <div class="text"><b>WEBSITE</b></div>
       </div>
@@ -183,7 +183,7 @@
   <div class="column">
     <div class="container">
       <center><img src="PICTURES/cmd.JPG" class="rightimage"></center>
-      <a href="https://github.com/Nabeel-Asghar/Date-Algorithm">
+      <a href="https://github.com/Nabeel-Asghar/Date-Algorithm"  target="_blank">
        <div class="middle2">
         <div class="text"><b>ALGORITHMS</b></div>
       </div>
@@ -197,13 +197,16 @@
 <br><br>
 <div id = "resume">
 <br>
-  <center style = "color: black; font-size: 3vw;">&mdash;&mdash;<b>Where I've Worked</b>&mdash;&mdash;</center>
+  <center style = "color: black; font-size: 30px;">&mdash;&mdash;<b>Where I've Worked</b>&mdash;&mdash;</center>
   <br>
   <div class="row">
     <div class="column1 left" style="background-color: ; ">
-      <img src= "PICTURES/bcbsm.jpg" class="responsive" style ="border-radius: 7%;">
+      <center><img src= "PICTURES/bcbsm.jpg" class = "resumeimage"></center>
     </div>
+    <center>
     <div class="column1 right" style="background-color:; font-family: 'Roboto', sans-serif;">
+
+      <div class = "textContainer">
       <p style = "margin: 0; line-height:25px;font-weight: 400 ; font-size: 25px; color: #4688d3; ">
         Blue Cross Blue Shield of Michigan <font color="black">- Detroit, MI</font>
         <br>
@@ -217,13 +220,18 @@
         </p>
       </p>
     </div>
+    </div>
+  </center>
   </div>
 
   <div class="row">
-    <div class="column1 left" style="background-color: ; ">
-      <img src= "PICTURES/oldmain.jpg" class="responsive" style ="border-radius: 7%;">
+    <div class="column2 l" style="background-color: ; ">
+      <center><img src= "PICTURES/oldmain.jpg" class="resumeimage"></center>
     </div>
-    <div class="column1 right" style="background-color:; font-family: 'Roboto', sans-serif;">
+    <center>
+    <div class="column2 r" style="background-color:; font-family: 'Roboto', sans-serif;">
+
+      <div class = "textContainer">
       <p style = "margin: 0; line-height:25px;font-weight: 400 ; font-size: 25px; color: #4688d3; ">
         Wayne State University<font color="black"> - Detroit, MI</font>
         <br>
@@ -236,8 +244,10 @@
         deployment of IDM (Identity Manager) of over a thousand RHEL servers.
         </p>
       </p>
+    </div>
       <br>
     </div>
+  </center>
   </div>
 
 </div>
@@ -251,37 +261,15 @@
 
 <div id="footer">
 <br><br><br>
-<center style = "color: black; font-size: 2vw;"><b>Connect With Me</b></center>
+<center style = "color: black; font-size: 27px;"><b>Connect With Me</b></center>
 <br>
 
-<div class="row" style =" margin-left: 20%;">
+<div class="row">
 
   <div class="columnOne">
     <div class ="container">
     <a href="https://www.linkedin.com/in/nabeel-asghar-7b6971148/" style =" text-decoration:none;">
-    <img src="PICTURES/linkedin.png" style="margin-left: 25%" class="responsive" border-radius ="25%">
-    <div class ="overlay"></div>
-    </a>
-    </div>
-
-  </div>
-
-  <div class="columnOne">
-
-    <div class ="container">
-    <a href="https://www.instagram.com/nabeel.asghar1/?hl=en" style =" text-decoration:none;">
-    <img src="PICTURES/instagram.png" style="margin-left: 15%;" class="responsive">
-    <div class ="overlay"></div>
-    </a>
-    </div>
-
-  </div>
-
-  <div class="columnOne">
-
-    <div class ="container">
-    <a href="https://github.com/Nabeel-Asghar" style =" text-decoration:none;">
-    <img src="PICTURES/github.png" style="margin-left: 5%;" class="responsive">
+    <img src="PICTURES/linkedin.png" class ="linkedin" >
     <div class ="overlay"></div>
     </a>
     </div>
@@ -292,20 +280,14 @@
 
     <div class ="container">
     <a href="https://www.facebook.com/nabeel.asghar.754" style =" text-decoration:none;">
-    <img src="PICTURES/facebook.png" style="margin-left: 5%" class="responsive">
+    <img src="PICTURES/facebook.png" class ="facebook">
     <div class ="overlay"></div>
     </a>
     </div>
 
   </div>
+
 </div>
-
-
-
-
-
-
-
 
 
 </footer>
