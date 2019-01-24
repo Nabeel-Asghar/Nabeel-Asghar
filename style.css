@@ -3,13 +3,19 @@ html {
 	overflow-x:hidden;
 	overflow-y: scroll;
 	font-family: "Courier New", Courier, monospace;
+	height: 100%;
 }
 
 body{
 	font-family: "Courier New", Courier, monospace;
-	background-image: url(PICTURES/gradient.jpg);
 	margin: 0;
+	height: 100%;
 	padding: 0;
+}
+
+#homepage{
+	background-color: black;
+	min-height: 100vh;
 }
 
 #myVideo {
@@ -26,148 +32,158 @@ main{
 	width: 100%;
 	font-size: 30px;
 	font-family: "Courier New", Courier, monospace;
+	background-color: white;
 }
 
 .container1 {
-  height: 25%; /* Full-height: remove this if you want "auto" height */
-  width: 10%; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	height: 120px;
+	min-width: 150px;
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
-	margin-top: 6%;
+	overflow-y: hidden; /* Disable horizontal scroll */
+	margin-top: 150px;
 }
 
 .container2 {
-	height: 25%;
-	width: 10%;
-	margin-top: 11%;
+	height: 120px;
+	min-width: 150px;
 	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-y: hidden; /* Disable horizontal scroll */
+	margin-top: 230px;
 }
 
 .container3 {
-	height: 25%;
-	width: 15%;
-	margin-top: 21%;
+	height: 120px;
+	min-width: 150px;
 	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-y: hidden; /* Disable horizontal scroll */
+	margin-top: 310px;
 }
 
 .container4 {
-	height: 25%;
-	width: 15%;
-	margin-top: 30%;
+	height: 120px;
+	min-width: 150px;
 	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-y: hidden; /* Disable horizontal scroll */
+	margin-top: 390px;
 }
 
 
 #shape4 {
 	background-color: #c1c1c1	;
-	height: 55%;
-	margin-left: 13%;
-	margin-top:20%;
-	width: 3%;
+	min-height: 55%;
+	margin-left: 20%;
+	margin-top:0;
+	min-width: 4%;
 	clear: right;
 	overflow: hidden;
 	float:left;
 }
 
 #label4{
-	margin-top: 33%;
+	margin-top: 11%;
 	float:right;
 	color: white;
-	margin-right: 35%;
-	font-size: 1.6vw;
+	margin-right: 15%;
+	font-size: 1.3vw;
 	overflow: hidden;
 	float:right;
 }
 
 #shape3 {
 	background-color: #c1c1c1	;
-	height: 55%;
-	margin-left: 13%;
-	margin-top:20%;
-	width: 3%;
+	min-height: 55%;
+	margin-left: 20%;
+	margin-top:0;
+	min-width: 4%;
 	clear: right;
 	overflow: hidden;
 	float:left;
 }
 
 #label3{
-	margin-top: 33%;
+	margin-top: 10%;
 	float:right;
 	color: white;
-	margin-right: 22%;
-	font-size: 1.6vw;
+	margin-right: 0%;
+	font-size: 1.3vw;
 	overflow: hidden;
 	float:right;
 }
 
 #shape2 {
 	background-color: #c1c1c1	;
-	height: 55%;
+	min-height: 55%;
 	margin-left: 20%;
-	margin-top:39%;
-	width: 5%;
+	margin-top:0;
+	min-width: 4%;
 	clear: right;
 	overflow: hidden;
 	float:left;
 }
 
 #label2{
-	margin-top: 60%;
+	margin-top: 15%;
 	float:right;
 	color: white;
-	margin-right: 10%;
-	font-size: 1.6vw;
+	margin-right: 22%;
+	font-size: 1.3vw;
 	overflow: hidden;
 }
 
 #shape1 {
 	background-color: #c1c1c1;
-	height: 55%;
+	min-height: 55%;
 	margin-left: 20%;
 	margin-top:0;
-	width: 5%;
+	min-width: 4%;
 	clear: right;
 	overflow: hidden;
 	float:left;
 }
 
 #label1{
-	margin-top: 20%;
+	margin-top: 15%;
 	float:right;
 	color: white;
-	margin-right: 20%;
-	font-size: 1.6vw;
+	margin-right: 30%;
+	font-size: 1.3vw;
 	overflow: hidden;
 }
 
 #introText{
-	margin-top: 20%;
 	font-size: 4vw;
 	color: white;
-	margin-left: 17%;
-	margin-bottom: 0;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
 }
 
 #belowText{
-	margin-top: 2%;
 	font-size: 2vw;
 	color: white;
-	margin-left: 45%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
 }
 
 #about{
@@ -179,15 +195,16 @@ main{
 	padding: 0px;
 	body: 0px;
 	margin: 0;
+
 }
 
 #projects{
 	background-image: url(PICTURES/code.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
-	background-color: #dbdde0;
-	height: 100%;
+	background-color: white;
 	width: 100%;
+	display:block;
 }
 
 #small{
@@ -202,27 +219,29 @@ main{
 }
 
 #fixProject{
-	margin-bottom: 20%;
+	margin-bottom: 10%;
 }
 
-p{
-	margin-left: 25%;
-	margin-right: 25%;
-	font-size: 2vw;
+#abouttext{
+	font-size: 28px;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 6%;
+	line-height: 40px;
 }
 
 .column {
   float: left;
   width: 33.33%;
-	background-color: #dbdde0;
+	background-color: white;
 }
 
 .leftimage{
 	border-radius: 0%;
-	width: 75%;
-	height: 75%;
+	width: 50%;
+	height: 50%;
 	border: 1px solid black;
-	margin-left: 27%;
+	margin-left: 52%;
 	transition: .8s ease;
   backface-visibility: hidden;
 	opacity: 1;
@@ -237,7 +256,7 @@ p{
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-	margin-left: 14%;
+	margin-left: 27%;
 }
 
 .middle1 {
@@ -257,10 +276,9 @@ p{
   opacity: 0;
   position: absolute;
   top: 50%;
-  left: 39%;
+  left: 26%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 
@@ -297,7 +315,7 @@ p{
 .text {
   background-color: ; /* Add background color for textboc here*/
   color: white;
-  font-size: 2vw;
+  font-size: 1.5vw;
 	border:3px;
 	border-style:solid;
 	border-color:white;
@@ -306,8 +324,8 @@ p{
 
 .middleimage{
 	border-radius: 0%;
-	width: 75%;
-	height: 75%;
+	width: 50%;
+	height: 50%;
 	border: 0px solid white;
 	transition: .8s ease;
 	backface-visibility: hidden;
@@ -316,10 +334,10 @@ p{
 
 .rightimage{
 	border-radius: 0%;
-	width: 75%;
-	height: 75%;
+	width: 50%;
+	height: 50%;
 	border: 0px solid white;
-	margin-right: 25%;
+	margin-right: 56%;
 	transition: .8s ease;
 	backface-visibility: hidden;
 	opacity: 1;
@@ -361,6 +379,31 @@ p{
 
 #footer{
 	background-color: white;
-	height: 100%;
+	height: 40%;
 	width: 100%;
+}
+
+/* Clear floats after the columns */
+.columnOne {
+	margin-left: 5%;
+  float: left;
+  width: 12.5%;
+	background-color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 150%;
+  opacity: 0;
+  transition: .9s ease;
+  background-color: white;
+}
+
+.container:hover .overlay {
+  opacity: .5;
 }

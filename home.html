@@ -35,6 +35,13 @@
       return false;
     });
 
+    $("#small").animate({opacity:0});
+    $(document).scroll(function() {
+      $("#small").animate({opacity:1});
+    });
+
+
+
     $("#shape1").mouseleave(function() {
       $("#label1").fadeOut();
     });
@@ -90,6 +97,7 @@
     $("html, body").stop();
     });
 
+
   });
 </script>
 
@@ -97,7 +105,10 @@
 </head>
 
 <body>
-<div id="homepage"></div>
+
+<main>
+
+<div id="homepage">
 <div class="container1">
   <div id="shape1"></div>
   <div id="label1">HOME</div>
@@ -118,38 +129,30 @@
   <div id="label4">RESUME</div>
 </div>
 
-<main>
+<div id="introText"><center>Hello, I&apos;m Nabeel Asghar</center></div>
+<div id="belowText"><center>Software, Scriping, Front-End</center></div>
 
-<div id="introText">Hello, I&apos;m Nabeel Asghar</div>
-<div id="belowText">Software, Scriping, Front-End</div>
-
-<video autoplay muted loop id="myVideo">
-  <source src="PICTURES/Inception.mp4" type="video/mp4">
-</video>
-
-<br><br><br><br><br><br><br><br><br>
-<br>
-
-<div class="snappoint"></div>
-<div id ="about">
-<p><div id = "small"><i><center><br><br><br><br><br>Discover who I am and everything about</center></i></div>
-<center><div id = "big"><b><br><br>MY ASPIRATIONS AND PERSONALITY<br><br><br><br><br><br></b></div></center>
-</p>
-
-<br><br>
-<p>I am a student at <b>WAYNE STATE UNIVERSITY.</b></p>
-<p>I am a resident of <b>DETROIT.</b></p>
-<p>I love <b>READING</b> and <b>CODING</b> in my free time.</p>
-
-<br>
-<br><br><br><br><br>
 </div>
 
-<div class="snappoint"></div>
+<div id ="about">
+<div id = "small"><i><center><br><br><br><br><br>Discover who I am and everything about</center></i></div>
+<center><div id = "big"><b><br><br>MY ASPIRATIONS AND PERSONALITY<br><br><br><br><br><br></b></div></center>
+
+<div id ="abouttext">
+<p>I am a student at <b>Wayne State University.</b> I am a resident
+  of the city of <b>Detroit.</b> I love to <b>read</b> and am always open to
+  book recommendations. Currently, I am working as an
+  <b>IT Infrastructure Intern</b> at Blue Cross Blue Shield.
+</div>
+
+<br>
+
+</div>
+
 <div id="projects"><br>
 
 <div id="fixProject">
-<p><div id = "small"><i><center><br><br>My work as a coder</center></i></div>
+<p><div id = "small"><i><center><br>My work as a coder</center></i></div>
 <center><div id = "big"><b><br><br>MY C++ AND PYTHON PROJECTS</b></div></center></p>
 </div>
 
@@ -187,46 +190,50 @@
     </a>
     </div>
   </div>
-
 </div>
 
-<br><br><br><br>
-</div>
 
-<div class="snappoint"></div>
+</div>
+<br><br>
 <div id = "resume">
-  <center style = "color: black; font-size: 3vw;">&mdash;&mdash;Here's where I've been&mdash;&mdash;</center>
+<br>
+  <center style = "color: black; font-size: 3vw;">&mdash;&mdash;<b>Where I've Worked</b>&mdash;&mdash;</center>
   <br>
   <div class="row">
     <div class="column1 left" style="background-color: ; ">
       <img src= "PICTURES/bcbsm.jpg" class="responsive" style ="border-radius: 7%;">
-      <br><br>
-      <img src= "PICTURES/oldmain.jpg" class="responsive" style ="border-radius: 7%;">
     </div>
     <div class="column1 right" style="background-color:; font-family: 'Roboto', sans-serif;">
-      <p style = "margin: 0; line-height:2.3vw;font-weight: 400 ; font-size: 1.6vw; color: #4688d3; ">
+      <p style = "margin: 0; line-height:25px;font-weight: 400 ; font-size: 25px; color: #4688d3; ">
         Blue Cross Blue Shield of Michigan <font color="black">- Detroit, MI</font>
         <br>
-        <p style = "margin: 0; margin-bottom: 2%; margin-top: 1.5%;line-height:2.5vw;font-weight: 400 ; font-size: 1.45vw; color: green;">IT Infrastructure Intern</p>
+        <p style = "margin: 0; margin-bottom: 2%; margin-top: 1.5%;line-height:2.5vw;font-weight: 400 ; font-size: 22px; color: green;">IT Infrastructure Intern</p>
 
-        <p style = "margin: 0; line-height:2.3vw;font-weight: 400 ; font-size: 1.35vw; color: black;">
+        <p style = "margin: 0; line-height:35px;font-weight: 400 ; font-size: 20px; color: black;">
         At Blue Cross, I was an intern on the Unix/Linux Infrastructure Team.
         We created scripts for the maintenance of production servers. Personally,
         I programmed scripts in Python with SQL components and assisted in the
         deployment of IDM (Identity Manager) of over a thousand RHEL servers.
         </p>
       </p>
-      <br>
-      <p style = "margin: 0; line-height:2.3vw;font-weight: 400 ; font-size: 1.6vw; color: #4688d3; ">
-        Wayne State University<font color="black">- Detroit, MI</font>
-        <br>
-        <p style = "margin: 0; margin-bottom: 2%; margin-top: 1.5%;line-height:2.5vw;font-weight: 400 ; font-size: 1.45vw; color: green;">B.S. in Computer Science</p>
+    </div>
+  </div>
 
-        <p style = "margin: 0; line-height:2.3vw;font-weight: 400 ; font-size: 1.35vw; color: black;">
-        Wayne State University taught me absolutely nothing except that you
-        have to learn by yourself if you want to succeed. I learned more in
-        one month preparing for an interview than I did in two years in this
-        shithole of a school.
+  <div class="row">
+    <div class="column1 left" style="background-color: ; ">
+      <img src= "PICTURES/oldmain.jpg" class="responsive" style ="border-radius: 7%;">
+    </div>
+    <div class="column1 right" style="background-color:; font-family: 'Roboto', sans-serif;">
+      <p style = "margin: 0; line-height:25px;font-weight: 400 ; font-size: 25px; color: #4688d3; ">
+        Wayne State University<font color="black"> - Detroit, MI</font>
+        <br>
+        <p style = "margin: 0; margin-bottom: 2%; margin-top: 1.5%;line-height:2.5vw;font-weight: 400 ; font-size: 22px; color: green;">IT Infrastructure Intern</p>
+
+        <p style = "margin: 0; line-height:35px;font-weight: 400 ; font-size: 20px; color: black;">
+        At Blue Cross, I was an intern on the Unix/Linux Infrastructure Team.
+        We created scripts for the maintenance of production servers. Personally,
+        I programmed scripts in Python with SQL components and assisted in the
+        deployment of IDM (Identity Manager) of over a thousand RHEL servers.
         </p>
       </p>
       <br>
@@ -247,22 +254,60 @@
 <center style = "color: black; font-size: 2vw;"><b>Connect With Me</b></center>
 <br>
 
-<a href="https://www.linkedin.com/in/nabeel-asghar-7b6971148/" style =" text-decoration:none;">
-<img src="PICTURES/linkedin.png" class = "hover1" style="margin-left: 25%;">
-</a>
+<div class="row" style =" margin-left: 20%;">
 
-<a href="https://www.instagram.com/nabeel.asghar1/?hl=en" style =" text-decoration:none;">
-<img src="PICTURES/instagram.png" style="margin-left: 5%;">
-</a>
+  <div class="columnOne">
+    <div class ="container">
+    <a href="https://www.linkedin.com/in/nabeel-asghar-7b6971148/" style =" text-decoration:none;">
+    <img src="PICTURES/linkedin.png" style="margin-left: 25%" class="responsive" border-radius ="25%">
+    <div class ="overlay"></div>
+    </a>
+    </div>
 
-<a href="https://github.com/Nabeel-Asghar" style =" text-decoration:none;">
-<img src="PICTURES/github.png" style="margin-left: 5%;">
-</a>
+  </div>
 
-<a href="https://www.facebook.com/nabeel.asghar.754" style =" text-decoration:none;">
-<img src="PICTURES/facebook.png" style="margin-left: 5%;">
-</a>
-<br><br><br><br>
+  <div class="columnOne">
+
+    <div class ="container">
+    <a href="https://www.instagram.com/nabeel.asghar1/?hl=en" style =" text-decoration:none;">
+    <img src="PICTURES/instagram.png" style="margin-left: 15%;" class="responsive">
+    <div class ="overlay"></div>
+    </a>
+    </div>
+
+  </div>
+
+  <div class="columnOne">
+
+    <div class ="container">
+    <a href="https://github.com/Nabeel-Asghar" style =" text-decoration:none;">
+    <img src="PICTURES/github.png" style="margin-left: 5%;" class="responsive">
+    <div class ="overlay"></div>
+    </a>
+    </div>
+
+  </div>
+
+  <div class="columnOne">
+
+    <div class ="container">
+    <a href="https://www.facebook.com/nabeel.asghar.754" style =" text-decoration:none;">
+    <img src="PICTURES/facebook.png" style="margin-left: 5%" class="responsive">
+    <div class ="overlay"></div>
+    </a>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
 </footer>
 
 
