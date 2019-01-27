@@ -4,6 +4,7 @@ html {
 	overflow-y: scroll;
 	font-family: "Courier New", Courier, monospace;
 	height: 100%;
+	max-width: 100%;
 }
 
 body{
@@ -44,7 +45,7 @@ main{
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
 	overflow-y: hidden; /* Disable horizontal scroll */
-	margin-top: 150px;
+	margin-top: 220px;
 }
 
 .container2 {
@@ -56,7 +57,7 @@ main{
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
 	overflow-y: hidden; /* Disable horizontal scroll */
-	margin-top: 230px;
+	margin-top: 280px;
 }
 
 .container3 {
@@ -68,7 +69,7 @@ main{
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
 	overflow-y: hidden; /* Disable horizontal scroll */
-	margin-top: 310px;
+	margin-top: 340px;
 }
 
 .container4 {
@@ -80,105 +81,97 @@ main{
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
 	overflow-y: hidden; /* Disable horizontal scroll */
-	margin-top: 390px;
+	margin-top: 400px;
 }
 
 
 #shape4 {
 	background-color: #c1c1c1	;
-	min-height: 55%;
+	min-height: 40%;
 	margin-left: 20%;
 	margin-top:0;
-	min-width: 4%;
+	min-width: 3%;
 	clear: right;
 	overflow: hidden;
 	float:left;
 }
 
 #label4{
-	margin-top: 11%;
+	margin-top: 9%;
 	float:right;
 	color: white;
-	margin-right: 15%;
-	font-size: 1.3vw;
+	margin-right: 25px;
+	font-size: 20px;
 	overflow: hidden;
 	float:right;
+	positon: absolute;
 }
 
 #shape3 {
 	background-color: #c1c1c1	;
-	min-height: 55%;
+	min-height: 40%;
 	margin-left: 20%;
 	margin-top:0;
-	min-width: 4%;
+	min-width: 3%;
 	clear: right;
 	overflow: hidden;
 	float:left;
 }
 
 #label3{
-	margin-top: 10%;
-	float:right;
+	margin-top: 8%;
 	color: white;
-	margin-right: 0%;
-	font-size: 1.3vw;
+	margin-right: 2px;
+	font-size: 20px;
 	overflow: hidden;
 	float:right;
+	positon: absolute;
 }
 
 #shape2 {
 	background-color: #c1c1c1	;
-	min-height: 55%;
+	min-height: 40%;
 	margin-left: 20%;
 	margin-top:0;
-	min-width: 4%;
+	min-width: 3%;
 	clear: right;
 	overflow: hidden;
 	float:left;
 }
 
 #label2{
-	margin-top: 15%;
+	margin-top: 9%;
 	float:right;
 	color: white;
-	margin-right: 22%;
-	font-size: 1.3vw;
+	margin-right: 37px;
+	font-size: 20px;
 	overflow: hidden;
+	positon: absolute;
 }
 
 #shape1 {
 	background-color: #c1c1c1;
-	min-height: 55%;
+	min-height: 40%;
 	margin-left: 20%;
 	margin-top:0;
-	min-width: 4%;
+	min-width: 3%;
 	clear: right;
 	overflow: hidden;
 	float:left;
 }
 
 #label1{
-	margin-top: 15%;
+	margin-top: 9%;
 	float:right;
 	color: white;
-	margin-right: 30%;
-	font-size: 1.3vw;
+	margin-right: 49px;
+	font-size: 20px;
 	overflow: hidden;
+	positon: absolute;
 }
 
 #introText{
 	font-size: 60px;
-	color: white;
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%);
-}
-
-#belowText{
-	margin-top: 2%;
-	font-size: 30px;
 	color: white;
 	position: absolute;
 	top: 50%;
@@ -188,7 +181,6 @@ main{
 }
 
 #about{
-	background-image: url(PICTURES/detroit4.JPG);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-color: #dbdde0;
@@ -196,6 +188,38 @@ main{
 	padding: 0px;
 	body: 0px;
 	margin: 0;
+}
+
+.aboutImage{
+	width: 100%;
+}
+
+.img-wrapper {
+
+		position: relative;
+		text-align: center;
+		color: white;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	font-size: 75px;
+	color: white;
+	line-height:100%;
+}
+
+.centered1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	font-size: 65px;
+	color: white;
+	line-height:100%;
 }
 
 #projects{
@@ -238,7 +262,6 @@ main{
 	font-size: 28px;
 	margin-left: 15%;
 	margin-right: 15%;
-	margin-top: 13%;
 	line-height: 150%;
 }
 
@@ -434,59 +457,36 @@ main{
 }
 
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 150%;
-  opacity: 0;
-  transition: .9s ease;
-  background-color: white;
-}
-
-.container:hover .overlay {
-  opacity: .5;
-}
-
 @media screen and (max-width: 800px) {
     .container1, .container2, .container3, .container4{
         display:none;
     }
+
 		#belowText{
-			margin-top: 12%;
-			font-size: 25px;
+			display:none;
 		}
 		#introText{
-			font-size: 45px;
+			font-size: 9vw;
+			top: 50%;
 		}
 		#small{
 			display: none;
 		}
+
 		#big{
 			position: relative;
 			font-size: 8vw;
 			line-height: 40%;
 			top: 80px;
 		}
-		#about{
-			background-image: url(PICTURES/detroit5.JPG);
-			background-size: 100%;
-			background-repeat: no-repeat;
-			background-color: #dbdde0;
-			margin-top: 1%;
-			padding: 0px;
-			body: 0px;
-			margin: 0;
-		}
+
+
 		#abouttext{
 			position: static;
 			top: 60px;
 			font-size: 25px;
 			line-height: 120%;
-			margin-top: 25%;
+			margin-top: 5%;
 			margin-left: 10%;
 			margin-right: 10%;
 		}
@@ -535,13 +535,18 @@ main{
 
 		.left{
 			width: 100%;
-			float:left;
-			margin-left: -1.5%;
+
+
 		}
 
 		.left img{
-			width: 425px;
-			margin: 0;
+
+			max-width:60%;
+			min-width: 60%;
+	    height:auto;
+	    max-height:50%;
+			margin-right: 45%;
+			margin-left: 3%;
 		}
 
 		.right{
@@ -550,26 +555,40 @@ main{
 		}
 
 		.textContainer{
-			width: 400px;
+			max-width: 80%;
 			text-align: left;
-			margin-left: -5%;
+			margin-left: 5%;
+			margin-right: 5%;
 		}
 
-
 		.l{
-			width: 100%;
+			width: 98%;
 			float:left;
-			margin-left: 0;
+
 		}
 
 		.l img{
-			width: 425px;
-			margin: 0;
+			max-width:200px;
+			min-width: 65%;
+	    height:auto;
+	    max-height:50%;
+			margin-right: 45%;
+			margin-left: 3%;
 		}
 
 		.r {
 			width: 100%;
 			float:left;
+		}
+		.centered{
+			font-size: 9vw;
+		}
+		.centered1{
+			font-size: 9vw;
+		}
+
+		.aboutImage{
+			width: 155%;
 		}
 
 }

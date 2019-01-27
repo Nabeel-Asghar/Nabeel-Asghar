@@ -12,21 +12,20 @@
   $(document).ready(function(){
 
     $("#introText").hide().fadeIn(1000);
-    $("#belowText").hide().delay(1000).fadeIn(1000);
 
-    $("#label1").hide().delay(1200).fadeIn(700);
+    $("#label1").hide().delay(800).fadeIn(700);
     $("#label1").fadeOut(800);
-    $("#label2").hide().delay(1700).fadeIn(700);
+    $("#label2").hide().delay(1200).fadeIn(700);
     $("#label2").fadeOut(800);
-    $("#label3").hide().delay(2200).fadeIn(700);
+    $("#label3").hide().delay(1600).fadeIn(700);
     $("#label3").fadeOut(800);
-    $("#label4").hide().delay(2700).fadeIn(700);
+    $("#label4").hide().delay(2000).fadeIn(700);
     $("#label4").fadeOut(800);
 
-    $("#shape1").mouseenter(function() {
+    $(".container1").mouseenter(function() {
       $("#label1").fadeIn();
 
-      $("#shape1").on("click", function(){
+      $(".container1").on("click", function(){
         $('html, body').animate({
           scrollTop: 0
         }, 1000);
@@ -35,19 +34,14 @@
       return false;
     });
 
-
-
-
-
-    $("#shape1").mouseleave(function() {
+    $(".container1").mouseleave(function() {
       $("#label1").fadeOut();
     });
 
-
-    $("#shape2").mouseenter(function() {
+    $(".container2").mouseenter(function() {
       $("#label2").fadeIn();
 
-      $("#shape2").on("click", function(){
+      $(".container2").on("click", function(){
         $('html, body').animate({
           scrollTop: $("#about").offset().top
         }, 1000);
@@ -55,15 +49,15 @@
       });
       return false;
     });
-    $("#shape2").mouseleave(function() {
+    $(".container2").mouseleave(function() {
       $("#label2").fadeOut();
     });
 
 
-    $("#shape3").mouseenter(function() {
+    $(".container3").mouseenter(function() {
       $("#label3").fadeIn();
 
-      $("#shape3").on("click", function(){
+      $(".container3").on("click", function(){
         $('html, body').animate({
           scrollTop: $("#projects").offset().top
         }, 1000);
@@ -71,14 +65,14 @@
       });
       return false;
     });
-    $("#shape3").mouseleave(function() {
+    $(".container3").mouseleave(function() {
       $("#label3").fadeOut();
     });
 
 
-    $("#shape4").mouseenter(function() {
+    $(".container4").mouseenter(function() {
       $("#label4").fadeIn();
-      $("#shape4").on("click", function(){
+      $(".container4").on("click", function(){
         $('html, body').animate({
           scrollTop: $("#resume").offset().top
         }, 1000);
@@ -86,7 +80,7 @@
       });
       return false;
     });
-    $("#shape4").mouseleave(function() {
+    $(".container4").mouseleave(function() {
       $("#label4").fadeOut();
     });
 
@@ -126,15 +120,16 @@
   <div id="label4">RESUME</div>
 </div>
 
-<div id="introText"><center>Hello, I&apos;m Nabeel Asghar</center></div>
-<div id="belowText"><center>Software, Scriping, Front-End</center></div>
+<div id="introText"><center>Hello, I&apos;m <Br>Nabeel Asghar</center></div>
 
 </div>
 
 <div id ="about">
-  <br><br><br>
-<div id = "small1"><i><center>Discover me and everything about me.</center></i></div>
-<center><div id = "big1"><b>WHO AM I?</b></div></center>
+<div class="img-wrapper">
+  <img src="PICTURES/detroit4.JPG" class="aboutImage">
+  <div class="centered"><b><center>ABOUT ME</center></b></div>
+</div>
+
 
 <div id ="abouttext">
   <center>
@@ -149,12 +144,14 @@
 
 </div>
 
-<div id="projects"><br>
 
-<div id="fixProject">
-<p><div id = "small"><i><center><br>My work as a programmer</center></i></div>
-<center><div id = "big"><b><br><br>MY CODING PROJECTS</b></div></center></p>
-</div>
+<div id ="projects">
+  <div class="img-wrapper">
+    <img src="PICTURES/code.jpg" class="aboutImage">
+    <div class="centered1"><b><center>MY CODING PROJECTS</center></b></div>
+  </div>
+
+<br>
 
 <div class="row">
 
@@ -197,7 +194,7 @@
 <br><br>
 <div id = "resume">
 <br>
-  <center style = "color: black; font-size: 30px;">&mdash;&mdash;<b>Where I've Worked</b>&mdash;&mdash;</center>
+  <center style = "color: black; font-size: 25px;">&mdash;&mdash;<b>Where I've Worked</b>&mdash;&mdash;</center>
   <br>
   <div class="row">
     <div class="column1 left" style="background-color: ; ">
@@ -235,13 +232,14 @@
       <p style = "margin: 0; line-height:25px;font-weight: 400 ; font-size: 25px; color: #4688d3; ">
         Wayne State University<font color="black"> - Detroit, MI</font>
         <br>
-        <p style = "margin: 0; margin-bottom: 2%; margin-top: 1.5%;line-height:2.5vw;font-weight: 400 ; font-size: 22px; color: green;">IT Infrastructure Intern</p>
+        <p style = "margin: 0; margin-bottom: 2%; margin-top: 1.5%;line-height:2.5vw;font-weight: 400 ; font-size: 22px; color: green;">B.S. in Computer Science</p>
 
         <p style = "margin: 0; line-height:35px;font-weight: 400 ; font-size: 20px; color: black;">
-        At Blue Cross, I was an intern on the Unix/Linux Infrastructure Team.
-        We created scripts for the maintenance of production servers. Personally,
-        I programmed scripts in Python with SQL components and assisted in the
-        deployment of IDM (Identity Manager) of over a thousand RHEL servers.
+          I've attended Wayne State University since September of 2016. I am
+          studying for a bachelor's of science in Computer Science and will be
+          graduating in May of 2020. I've learned a lot of things at Wayne
+          State and learned to start self projects from my expierence here.
+
         </p>
       </p>
     </div>
