@@ -11,7 +11,7 @@
 <script>
   $(document).ready(function(){
 
-    $("#introText").hide().fadeIn(1000);
+    $("#introText").hide().fadeIn(3000);
 
     $("#label1").hide().delay(800).fadeIn(700);
     $("#label1").fadeOut(800);
@@ -100,6 +100,7 @@
 <main>
 
 <div id="homepage">
+<img src="PICTURES/nabeel2.JPG" style="max-width: 100vw;">
 <div class="container1">
   <div id="shape1"></div>
   <div id="label1">HOME</div>
@@ -125,18 +126,21 @@
 </div>
 
 <div id ="about">
-<div class="img-wrapper">
-  <img src="PICTURES/detroit4.JPG" class="aboutImage">
-  <div class="centered"><b><center>ABOUT ME</center></b></div>
+
+<div class ="img-container" style ="width:100%;">
+  <img src="PICTURES/detroit4.JPG" alt="Snow" style="width:100%;">
+  <div class="centered"><b>ABOUT ME</b></div>
 </div>
+
+<center><div id = "big1">Learn a little bit about me.</div></center>
 
 
 <div id ="abouttext">
   <center>
-<p>I am a student at <b>Wayne State University.</b> I live around
-  the city of <b>Detroit.</b> I love to <b>read</b> and am
-  always open to book recommendations. Currently, I am working
-  as an <b>IT Infrastructure Intern</b> at Blue Cross Blue Shield.
+<p>I am a student at <b style = "color: green;">Wayne State University.</b>
+  I live around the city of <b style ="color: #4688d3;">Detroit.</b>
+  I love to <b>read</b> and am always open to book recommendations.
+  Currently, I am working as an <b style ="color: #4688d3;">IT Infrastructure Intern</b> at Blue Cross Blue Shield.
 </center>
 </div>
 
@@ -144,14 +148,16 @@
 
 </div>
 
+<div id="projects">
+<div class ="img-container" style ="width:100%;">
+    <img src="PICTURES/code.JPG" alt="Snow" style="width:100%;">
+    <div class="centered1"><b>MY CODING PROJECTS</b></div>
+</div>
 
-<div id ="projects">
-  <div class="img-wrapper">
-    <img src="PICTURES/code.jpg" class="aboutImage">
-    <div class="centered1"><b><center>MY CODING PROJECTS</center></b></div>
-  </div>
-
-<br>
+<div id="fixProject">
+  <br>
+<center><div id = "big">I love coding in my free time, here's few examples of what I've been up to.</div></center></p>
+</div>
 
 <div class="row">
 
@@ -194,8 +200,8 @@
 <br><br>
 <div id = "resume">
 <br>
-  <center style = "color: black; font-size: 25px;">&mdash;&mdash;<b>Where I've Worked</b>&mdash;&mdash;</center>
-  <br>
+  <center><div id ="big3">Here's some of the places I've been.</div></center>
+
   <div class="row">
     <div class="column1 left" style="background-color: ; ">
       <center><img src= "PICTURES/bcbsm.jpg" class = "resumeimage"></center>
@@ -259,7 +265,7 @@
 
 <div id="footer">
 <br><br><br>
-<center style = "color: black; font-size: 27px;"><b>Connect With Me</b></center>
+<center style = "color: black; font-size: 30px; font-family: 'Roboto';"><b>Connect With Me</b></center>
 <br>
 
 <div class="row">
