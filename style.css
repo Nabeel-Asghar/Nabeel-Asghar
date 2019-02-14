@@ -14,9 +14,14 @@ body{
 	padding: 0;
 }
 
+
 #homepage{
-	background-color: black;
+	background-image: url("PICTURES/nabeeldesktop.jpg");
 	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 }
 
 .brstyle{
@@ -465,6 +470,7 @@ main{
         display:none;
     }
 
+
 		#belowText{
 			display:none;
 		}
@@ -579,5 +585,7 @@ main{
 		.brstyle{
 			display:inline;
 		}
+
+
 
 }
