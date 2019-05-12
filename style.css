@@ -16,7 +16,7 @@ body{
 
 
 #homepage{
-	background-image: url("PICTURES/nabeeldesktop.jpg");
+	background-image: url("PICTURES/nabeel.jpg");
 	height: 100vh;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -54,7 +54,7 @@ main{
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
 	overflow-y: hidden; /* Disable horizontal scroll */
-	margin-top: 220px;
+	margin-top: -100px;
 }
 
 .container2 {
@@ -66,7 +66,7 @@ main{
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
 	overflow-y: hidden; /* Disable horizontal scroll */
-	margin-top: 280px;
+	margin-top: -32.5px;
 }
 
 .container3 {
@@ -78,7 +78,7 @@ main{
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
 	overflow-y: hidden; /* Disable horizontal scroll */
-	margin-top: 340px;
+	margin-top: 32.5px;
 }
 
 .container4 {
@@ -90,7 +90,7 @@ main{
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
 	overflow-y: hidden; /* Disable horizontal scroll */
-	margin-top: 400px;
+	margin-top: 100px;
 }
 
 
@@ -179,15 +179,33 @@ main{
 	positon: absolute;
 }
 
+.navigator{
+	 margin: 0;
+	 position: fixed;
+	 top: 50%;
+	 -ms-transform: translateY(-50%);
+	 transform: translateY(-50%);
+	 z-index: 1000;
+}
+
+#change{
+	color: green;
+}
+
+
 #introText{
 	font-size: 85px;
-	color: white;
+	color: #edeeef;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%);
 	font-family: 'Roboto';
+	border: 10px;
+	border-style: solid;
+	padding: 15px;
+
 }
 
 #about{
@@ -471,12 +489,25 @@ main{
     }
 
 
+		#homepage{
+			background-image: url("PICTURES/mobile.jpg");
+			height: 100vh;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+
+
+
 		#belowText{
 			display:none;
 		}
 		#introText{
 			font-size: 9vw;
 			top: 50%;
+			border: 6px;
+			border-style: solid;
 		}
 		#small{
 			display: none;
