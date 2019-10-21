@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" class="home">
+
+<head>
+<link rel="stylesheet"  href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<title>Nabeel Asghar</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+  $(document).ready(function(){
+
+    $("#introText").hide().fadeIn(3000);
+
+    $("#label1").hide().delay(800).fadeIn(700);
+    $("#label1").fadeOut(800);
+    $("#label2").hide().delay(1200).fadeIn(700);
+    $("#label2").fadeOut(800);
+    $("#label3").hide().delay(1600).fadeIn(700);
+    $("#label3").fadeOut(800);
+    $("#label4").hide().delay(2000).fadeIn(700);
+    $("#label4").fadeOut(800);
+
+    $(".container1").mouseenter(function() {
+      $("#label1").fadeIn();
+
+      $(".container1").on("click", function(){
+        $('html, body').animate({
+          scrollTop: 0
+        }, 1000);
+
+      });
+      return false;
+    });
+
+    $(".container1").mouseleave(function() {
+      $("#label1").fadeOut();
+    });
+
+    $(".container2").mouseenter(function() {
+      $("#label2").fadeIn();
+
+      $(".container2").on("click", function(){
+        $('html, body').animate({
+          scrollTop: $("#about").offset().top
+        }, 1000);
+
+      });
+      return false;
+    });
+    $(".container2").mouseleave(function() {
+      $("#label2").fadeOut();
+    });
+
+
+    $(".container3").mouseenter(function() {
+      $("#label3").fadeIn();
+
+      $(".container3").on("click", function(){
+        $('html, body').animate({
+          scrollTop: $("#projects").offset().top
+        }, 1000);
+
+      });
+      return false;
+    });
+    $(".container3").mouseleave(function() {
+      $("#label3").fadeOut();
+    });
+
+
+    $(".container4").mouseenter(function() {
+      $("#label4").fadeIn();
+      $(".container4").on("click", function(){
+        $('html, body').animate({
+          scrollTop: $("#resume").offset().top
+        }, 1000);
+
+      });
+      return false;
+    });
+    $(".container4").mouseleave(function() {
+      $("#label4").fadeOut();
+    });
+
+    $(window).bind("mousewheel", function() {
+    $("html, body").stop();
+    });
+
+
+    // $(window).scroll (function () {
+    //     var sT = $(this).scrollTop();
+    //         if (0==0) {
+    //             $('#introText').addClass('change')
+    //             $('.label2').addClass('change')
+    //             $('.label3').addClass('change')
+    //             $('.label4').addClass('change')
+    //         }else {
+    //             $('.label1').removeClass('change')
+    //             $('.label2').removeClass('change')
+    //             $('.label3').removeClass('change')
+    //             $('.label4').removeClass('change')
+    //         }
+    // })
+
+
+  });
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<main>
+
+<div id="homepage">
+
+<div class ="navigator">
+
+<div class="container1">
+  <div id="shape1"></div>
+  <div id="label1"><b>HOME</b></div>
+</div>
+
+<div class="container2">
+  <div id="shape2"></div>
+  <div id="label2"><b>ABOUT</b></div>
+</div>
+
+<div class="container3">
+  <div id="shape3"></div>
+  <div id="label3"><b>PROJECTS</b></div>
+</div>
+
+<div class="container4">
+  <div id="shape4"></div>
+  <div id="label4"><b>RESUME</b></div>
+</div>
+
+</div>
+
+<div id="introText"><center>Hello, I&apos;m <Br>Nabeel Asghar</center></div>
+
+</div>
+
+<div id ="about">
+
+<div class ="img-container" style ="width:100%;">
+  <img src="PICTURES/detroit4.JPG"  style="width:100%;">
+  <div class="centered"><b>ABOUT ME</b></div>
+</div>
+
+<center><div id = "big1">Learn a little bit about me.</div></center>
+
+
+<div id ="abouttext">
+  <center>
+<p>I am a student at <b style = "color: green;">Wayne State University.</b>
+  I live around the city of <b style ="color: #4688d3;">Detroit.</b>
+  I love to <b>read</b> and am always open to book recommendations.
+  Currently, I am working as an <b style ="color: #4688d3;">IT Infrastructure Intern</b> at Blue Cross Blue Shield.
+</center>
+</div>
+
+<br>
+
+</div>
+
+<div id="projects">
+<div class ="img-container" style ="width:100%;">
+    <img src="PICTURES/code.jpg"  style="width:100%;">
+    <div class="centered1"><b>MY CODING PROJECTS</b></div>
+</div>
+
+<div id="fixProject">
+  <br>
+<center><div id = "big">I love coding in my free time, here's few examples of what I've been up to.</div></center></p>
+</div>
+
+<div class="row">
+
+  <div class="column">
+    <div class="container">
+      <center><img src="PICTURES/calc.JPG" class="leftimage"></center>
+      <a href="https://github.com/Nabeel-Asghar/Calculator"  target="_blank">
+       <div class="middle">
+        <div class="text"><b>CALCULATOR</b></div>
+      </div>
+    </a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="container">
+      <center><img src="PICTURES/library.jpg" class="middleimage"></center>
+       <a href="https://github.com/Nabeel-Asghar/Website"  target="_blank">
+       <div class="middle1">
+        <div class="text"><b>WEBSITE</b></div>
+      </div>
+    </a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="container">
+      <center><img src="PICTURES/cmd.JPG" class="rightimage"></center>
+      <a href="https://github.com/Nabeel-Asghar/Date-Algorithm"  target="_blank">
+       <div class="middle2">
+        <div class="text"><b>ALGORITHMS</b></div>
+      </div>
+    </a>
+    </div>
+  </div>
+ </div>
+</div>
+
+
+
+<br><br>
+<div id = "resume">
+<br>
+  <center><div id ="big3">Here's some of the places I've been.</div></center>
+
+  <div class="row">
+    <div class="column1 left" style="background-color: ; ">
+      <center><img src= "PICTURES/bcbsm.jpg" class = "resumeimage"></center>
+    </div>
+    <center>
+    <div class="column1 right" style="background-color:; font-family: 'Roboto', sans-serif;">
+
+      <div class = "textContainer">
+      <p style = "margin: 0; line-height:25px;font-weight: 400 ; font-size: 25px; color: #4688d3; ">
+        Blue Cross Blue Shield of Michigan <font color="black">- Detroit, MI</font>
+        <br>
+        <p style = "margin: 0; margin-bottom: 2%; margin-top: 1.5%;line-height:100%;font-weight: 400 ; font-size: 22px; color: green;">IT Infrastructure Intern</p>
+
+        <p style = "margin: 0; line-height:35px;font-weight: 400 ; font-size: 20px; color: black;">
+        At Blue Cross, I was an intern on the Unix/Linux Infrastructure Team.
+        We created scripts for the maintenance of production servers. Personally,
+        I programmed scripts in Python with SQL components and assisted in the
+        deployment of IDM (Identity Manager) of over a thousand RHEL servers.
+        </p>
+      </p>
+    </div>
+    </div>
+  </center>
+  </div>
+
+  <div class="row">
+    <div class="column2 l" style="background-color: ; ">
+      <center><img src= "PICTURES/oldmain.jpg" class="resumeimage"></center>
+    </div>
+    <center>
+    <div class="column2 r" style="background-color:; font-family: 'Roboto', sans-serif;">
+
+      <div class = "textContainer">
+      <p style = "margin: 0; line-height:25px;font-weight: 400 ; font-size: 25px; color: #4688d3; ">
+        Wayne State University<font color="black"> - Detroit, MI</font>
+        <br>
+        <p style = "margin: 0; margin-bottom: 2%; margin-top: 1.5%;line-height:100%;font-weight: 400 ; font-size: 22px; color: green;">B.S. in Computer Science</p>
+
+        <p style = "margin: 0; line-height:35px;font-weight: 400 ; font-size: 20px; color: black;">
+          I've attended Wayne State University since September of 2016. I am
+          studying for a bachelor's of science in Computer Science and will be
+          graduating in May of 2020. I've learned a lot of things at Wayne
+          State and learned to start self projects from my experience here.
+
+        </p>
+      </p>
+    </div>
+      <br>
+    </div>
+  </center>
+
+  </div>
+<br>
+</div>
+
+
+</main>
+
+
+</body>
+
+
+<div id="footer">
+<br><br><br>
+<center style = "color: black; font-size: 30px; font-family: 'Roboto';"><b>Connect With Me</b></center>
+<br>
+
+<div class="row">
+
+  <div class="columnOne">
+    <div class ="container">
+    <a href="https://www.linkedin.com/in/nabeel-asghar-7b6971148/" style =" text-decoration:none;">
+    <img src="PICTURES/linkedin.png" class ="linkedin" >
+    <div class ="overlay"></div>
+    </a>
+    </div>
+
+  </div>
+
+  <div class="columnOne">
+
+    <div class ="container">
+    <a href="https://www.facebook.com/nabeel.asghar.754" style =" text-decoration:none;">
+    <img src="PICTURES/facebook.png" class ="facebook">
+    <div class ="overlay"></div>
+    </a>
+    </div>
+
+  </div>
+
+</div>
+
+
+</footer>
+
+
+</html>

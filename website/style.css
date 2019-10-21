@@ -1,0 +1,622 @@
+
+html {
+	overflow-x:hidden;
+	overflow-y: scroll;
+	font-family: "Courier New", Courier, monospace;
+	height: 100%;
+	max-width: 100vw;
+}
+
+body{
+	font-family: "Courier New", Courier, monospace;
+	margin: 0;
+	height: 100%;
+	padding: 0;
+}
+
+
+#homepage{
+	background-image: url("PICTURES/nabeel.jpg");
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.brstyle{
+	display:none;
+}
+
+#myVideo {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0;
+  top: -9%;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+main{
+	width: 100%;
+	font-size: 30px;
+	font-family: "Courier New", Courier, monospace;
+	background-color: white;
+}
+
+.container1 {
+	height: 120px;
+	min-width: 150px;
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-y: hidden; /* Disable horizontal scroll */
+	margin-top: -100px;
+}
+
+.container2 {
+	height: 120px;
+	min-width: 150px;
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-y: hidden; /* Disable horizontal scroll */
+	margin-top: -32.5px;
+}
+
+.container3 {
+	height: 120px;
+	min-width: 150px;
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-y: hidden; /* Disable horizontal scroll */
+	margin-top: 32.5px;
+}
+
+.container4 {
+	height: 120px;
+	min-width: 150px;
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-y: hidden; /* Disable horizontal scroll */
+	margin-top: 100px;
+}
+
+
+#shape4 {
+	background-color: #c1c1c1	;
+	min-height: 40%;
+	margin-left: 20%;
+	margin-top:0;
+	min-width: 3%;
+	clear: right;
+	overflow: hidden;
+	float:left;
+}
+
+#label4{
+	margin-top: 9%;
+	float:right;
+	color: white;
+	margin-right: 25px;
+	font-size: 20px;
+	overflow: hidden;
+	float:right;
+	positon: absolute;
+}
+
+#shape3 {
+	background-color: #c1c1c1	;
+	min-height: 40%;
+	margin-left: 20%;
+	margin-top:0;
+	min-width: 3%;
+	clear: right;
+	overflow: hidden;
+	float:left;
+}
+
+#label3{
+	margin-top: 8%;
+	color: white;
+	margin-right: 2px;
+	font-size: 20px;
+	overflow: hidden;
+	float:right;
+	positon: absolute;
+}
+
+#shape2 {
+	background-color: #c1c1c1	;
+	min-height: 40%;
+	margin-left: 20%;
+	margin-top:0;
+	min-width: 3%;
+	clear: right;
+	overflow: hidden;
+	float:left;
+}
+
+#label2{
+	margin-top: 9%;
+	float:right;
+	color: white;
+	margin-right: 37px;
+	font-size: 20px;
+	overflow: hidden;
+	positon: absolute;
+}
+
+#shape1 {
+	background-color: #c1c1c1;
+	min-height: 40%;
+	margin-left: 20%;
+	margin-top:0;
+	min-width: 3%;
+	clear: right;
+	overflow: hidden;
+	float:left;
+}
+
+#label1{
+	margin-top: 9%;
+	float:right;
+	color: white;
+	margin-right: 49px;
+	font-size: 20px;
+	overflow: hidden;
+	positon: absolute;
+}
+
+.navigator{
+	 margin: 0;
+	 position: fixed;
+	 top: 50%;
+	 -ms-transform: translateY(-50%);
+	 transform: translateY(-50%);
+	 z-index: 1000;
+}
+
+#change{
+	color: green;
+}
+
+
+#introText{
+	font-size: 85px;
+	color: #edeeef;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Roboto';
+	border: 10px;
+	border-style: solid;
+	padding: 15px;
+
+}
+
+#about{
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-color: #edeeef;
+	padding: 0px;
+	body: 0px;
+	margin: 0;
+}
+
+.img-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	font-size: 80px;
+	color: white;
+	line-height:100%;
+	font-family: 'Roboto';
+}
+
+.centered1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	font-size: 70px;
+	color: white;
+	line-height:100%;
+	font-family: 'Roboto';
+}
+
+#projects{
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: white;
+	width: 100%;
+	display:block;
+}
+
+#big{
+	font-size: 50px;
+	color: black;
+	line-height:95%;
+	margin-left: 15%;
+	margin-right: 15%;
+	font-family: 'Roboto';
+	display:none;
+}
+
+#big3{
+	font-size: 45px;
+	color: black;
+	line-height:95%;
+	font-family: 'Roboto';
+	margin-bottom: 3%;
+}
+
+#big1{
+	font-size: 50px;
+	color: black;
+	line-height:100%;
+	font-family: 'Roboto';
+	display:none;
+}
+
+#abouttext{
+	font-size: 26px;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 3.5%;
+	margin-bottom: 3.5%;
+	line-height: 150%;
+	font-family: 'Roboto';
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+	background-color: white;
+}
+
+.leftimage{
+	border-radius: 0%;
+	width: 50%;
+	height: 50%;
+	border: 1px solid black;
+	margin-left: 52%;
+	transition: .8s ease;
+  backface-visibility: hidden;
+	opacity: 1;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+	margin-left: 27%;
+}
+
+.middle1 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+	margin-left: 0.5%;
+}
+
+.middle2 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container {
+  position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.container:hover .leftimage {
+  opacity: 0.3;
+}
+
+.container:hover .middleimage {
+  opacity: 0.3;
+}
+
+.container:hover .rightimage {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.container:hover .middle1 {
+  opacity: 1;
+}
+
+.container:hover .middle2 {
+  opacity: 1;
+}
+
+.text {
+  background-color: ; /* Add background color for textboc here*/
+  color: white;
+  font-size: 2vw;
+	border:3px;
+	border-style:solid;
+	border-color:white;
+	padding: 5px;
+		font-family: 'Roboto';
+}
+
+.middleimage{
+	border-radius: 0%;
+	width: 50%;
+	height: 50%;
+	border: 0px solid white;
+	transition: .8s ease;
+	backface-visibility: hidden;
+	opacity: 1;
+}
+
+.rightimage{
+	border-radius: 0%;
+	width: 50%;
+	height: 50%;
+	border: 0px solid white;
+	margin-right: 56%;
+	transition: .8s ease;
+	backface-visibility: hidden;
+	opacity: 1;
+}
+
+#resume{
+	background-color: #edeeef;
+	height: 100%;
+	width: 100%;
+}
+
+.column1 {
+  float: left;
+  padding: 10px;
+}
+
+.column2 {
+  float: left;
+  padding: 10px;
+}
+
+.l {
+  width: 25%;
+  margin-left: 15%;
+	margin-right: 2%;
+	text-align: left;
+}
+
+.r {
+  width: 45%;
+}
+
+.textContainer{
+	text-align: left;
+}
+
+.left {
+  width: 25%;
+  margin-left: 15%;
+	margin-right: 2%;
+	text-align: left;
+}
+
+.right {
+  width: 45%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.resumeimage{
+	width: 100%;
+	min-width:230px;
+	max-width: 400px;
+	border-radius: 7%;
+	float:right;
+}
+
+
+#footer{
+	background-color: white;
+	height: 40%;
+	width: 100%;
+}
+
+/* Clear floats after the columns */
+.columnOne {
+  float: left;
+	background-color: white;
+	width:49%;
+
+}
+
+.linkedin{
+	float:right;
+}
+.facebook{
+	margin-left: 3%;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .container1, .container2, .container3, .container4{
+        display:none;
+    }
+
+
+		#homepage{
+			background-image: url("PICTURES/mobile.jpg");
+			height: 100vh;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+
+
+
+		#belowText{
+			display:none;
+		}
+		#introText{
+			font-size: 9vw;
+			top: 50%;
+			border: 6px;
+			border-style: solid;
+		}
+		#small{
+			display: none;
+		}
+
+		#abouttext{
+			position: static;
+			top: 60px;
+			font-size: 23.5px;
+			line-height: 120%;
+			margin-top: 0;
+			margin-left: 10%;
+			margin-right: 10%;
+		}
+		.column{
+			width: 100%;
+		  float: left;
+		}
+		.leftimage{
+			margin: 0;
+
+		}
+		.middleimage{
+			margin: 0;
+
+		}
+		.rightimage{
+			margin: 0;
+
+		}
+		.text{
+			font-size: 4vw;
+		}
+		.middle{
+			margin-left: 0;
+		}
+		.middle2{
+			left: 50%;
+		}
+
+		#big1{
+			position: relative;
+			font-size: 40px;
+			line-height: 100%;
+			margin-top: 5%;
+			display:inline-block;
+		}
+
+		.img-container {
+			 display:none;
+		}
+
+		#big{
+			position: relative;
+			font-size: 35px;
+			line-height: 100%;
+			display:inline-block;
+		}
+
+		#big3{
+			position: relative;
+			font-size: 35px;
+			line-height: 100%;
+			margin-top: 2%;
+			margin-bottom: 5%;
+		}
+
+		.left{
+			width: 80%;
+			float:left;
+		}
+
+		.left img{
+			max-width:70%;
+	    max-height:70%;
+			margin-right: 25%;
+		}
+
+		.right{
+			width: 80%;
+			float:left;
+		}
+
+		.textContainer{
+			max-width: 75%;
+			text-align: left;
+			margin-left: 25%;
+		}
+
+		.l{
+			width: 80%;
+			float:left;
+		}
+
+		.l img{
+			max-width:70%;
+	    max-height:70%;
+			margin-right: 25%;
+		}
+
+		.r {
+			width: 80%;
+			float:left;
+		}
+
+		.brstyle{
+			display:inline;
+		}
+
+
+
+}
