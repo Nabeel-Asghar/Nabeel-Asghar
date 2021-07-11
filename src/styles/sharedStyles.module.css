@@ -1,0 +1,129 @@
+.regularFont {
+  color: white;
+}
+
+.darkerFont {
+  color: #b0aeae;
+}
+
+.coloredFont {
+  color: #86c232;
+}
+
+.gridContainer {
+  min-height: calc(100vh - 64px);
+  padding: 25px 0px;
+}
+
+.gridContainerSpaced {
+  min-height: calc(100vh - 64px);
+  padding: 200px 0px;
+}
+
+.introText {
+  max-width: 800px;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.textContainer {
+  max-width: 625px;
+}
+
+.projectText {
+  padding: 25px;
+  background: rgb(71, 75, 79);
+}
+
+.projectHeader{
+  color: #86c232;
+}
+
+.container {
+  margin: auto;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid transparent;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 25px 0px 60px 60px;
+  max-width: 1000px;
+}
+
+.mobileContainer {
+  margin: auto;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid transparent;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 25px 0px 25px 25px;
+  max-width: 1000px;
+}
+
+.demo {
+  background-image: linear-gradient(#222629, #222629),
+    linear-gradient(
+      135deg,
+      #feed07 0%,
+      #fe6a50 5%,
+      #ed00aa 15%,
+      #2fe3fe 50%,
+      #8900ff 100%
+    );
+  background-repeat: no-repeat;
+  background-origin: padding-box, border-box;
+  text-align: left;
+}
+
+.animated {
+  background-image: linear-gradient(#222629, #222629),
+    linear-gradient(
+      135deg,
+      #feed07 0%,
+      #fe6a50 5%,
+      #ed00aa 15%,
+      #2fe3fe 50%,
+      #8900ff 100%
+    );
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%, 100% 200%;
+  background-position: 0 0, 0 100%;
+  background-origin: padding-box, border-box;
+  animation: highlight 1s infinite alternate;
+}
+
+@keyframes highlight {
+  100% {
+    background-position: 0 0, 0 0;
+  }
+}
+
+.hyperlink {
+  color: #86c232;
+}
+
+.divider {
+  border-bottom: 3px solid #86c232;
+}
+
+.vertical-timeline.vertical-timeline-custom-line::before {
+  background: #424242 !important;
+}
+
+.chipContainer {
+  padding-bottom: 10px;
+}
+
+.timelineContainer {
+  margin: 50px 0px
+}
+
+.cardImage {
+  filter: grayscale(1);
+}
+
+.cardImage:hover {
+  filter: grayscale(0);
+}
