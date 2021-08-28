@@ -82,13 +82,7 @@ const AboutMe = () => {
             </Typography>
           </Grid>
           <Grid item sm={6} xs={12}>
-            <StaticImage
-              src="../images/nabeelmobile.jpg"
-              width={450}
-              data-sal="slide-right"
-              data-sal-delay="800"
-              data-sal-easing="ease"
-            />
+            <StaticImage src="../images/nabeelmobile.jpg" width={450} />
           </Grid>
         </Grid>
       </Grid>

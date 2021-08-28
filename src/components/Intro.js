@@ -1,9 +1,34 @@
 import * as React from "react";
 import { Grid, Typography } from "@material-ui/core";
 import * as styles from "../styles/sharedStyles.module.css";
+import Button from "@material-ui/core/Button";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    color: "white",
+    marginLeft: theme.spacing(2),
+  },
+  title: {
+    flexGrow: 1,
+  },
+  buttonRoot: {
+    borderRadius: 3,
+    border: "2px solid #86c232",
+    color: "white",
+    height: 65,
+    width: 225,
+    marginTop: 25,
+    marginBottom: -10,
+  },
+}));
 
 const Intro = (props) => {
   const { fullScreen } = props;
+  const classes = useStyles();
 
   return (
     <Grid
@@ -71,6 +96,23 @@ const Intro = (props) => {
             where we created the flow for buying vehicles online for the first
             time ever in Ford's history!
           </Typography>
+          <a
+            href="mailto:nabeel.asghar156@gmail.com"
+            style={{ textDecoration: "none" }}
+          >
+            <Button
+              classes={{
+                root: classes.buttonRoot,
+              }}
+            >
+              <Typography
+                variant={"h6"}
+                style={{ color: "#86c232", textDecoration: "none" }}
+              >
+                Contact Me
+              </Typography>
+            </Button>
+          </a>
         </div>
       </Grid>
     </Grid>

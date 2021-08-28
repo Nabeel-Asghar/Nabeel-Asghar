@@ -196,11 +196,10 @@ const Timeline = (props) => {
             Blue Cross Blue Shield of Michigan
           </h4>
           <p>
-            Used Python and SQL to create a script to autofill over 2#6b6e70
-            thousand servers’ values to eliminate time needed to enter values
-            manually and to allow accurate queries into our database. Assisted
-            in the deployment of IDM (Identity Manager) of over a thousand RHEL
-            servers
+            Used Python and SQL to create a script to autofill over two thousand
+            servers’ values to eliminate time needed to enter values manually
+            and to allow accurate queries into our database. Assisted in the
+            deployment of IDM (Identity Manager) of over a thousand RHEL servers
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>

@@ -5,6 +5,7 @@ import { HeaderDivider } from "./HeaderDivider";
 import Card from "./Card";
 import project1 from "../images/project1.png";
 import project2 from "../images/project2.png";
+import GTA from "../images/GTA.jpg";
 
 const Projects = () => {
   return (
@@ -32,12 +33,10 @@ const Projects = () => {
           }
         />
       </Grid>
-      <Grid item sm={6} xs={12}>
+      <Grid item md={6} sm={12}>
         <Card
           site={"https://github.com/Nabeel-Asghar/AutoDrive"}
-          image={
-            "https://github.com/Nabeel-Asghar/AutoDrive/raw/master/GTA.gif"
-          }
+          image={GTA}
           title={"GTA V Auto Drive"}
           tags={["Python", "OpenCV", "Computer Vision"]}
           body={
@@ -47,7 +46,7 @@ const Projects = () => {
           }
         />
       </Grid>
-      <Grid item sm={6} xs={12}>
+      <Grid item md={6} sm={12}>
         <Card
           site={"https://www.serume.org"}
           image={project2}

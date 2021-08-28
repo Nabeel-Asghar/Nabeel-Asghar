@@ -121,9 +121,23 @@
 }
 
 .cardImage {
-  filter: grayscale(1);
+  filter: grayscale(0.75);
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .cardImage:hover {
   filter: grayscale(0);
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.resumeContainer {
+  margin: 0px auto;
+  width: 765px;
 }

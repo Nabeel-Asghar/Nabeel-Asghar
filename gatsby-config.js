@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "personal-website",
+    title: "Nabeel Asghar",
+    description: "This my personal website showcasing me.",
+    author: "Nabeel Asghar",
   },
   plugins: [
     "gatsby-plugin-material-ui",

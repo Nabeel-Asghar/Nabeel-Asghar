@@ -1,11 +1,14 @@
 import * as React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, styled } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import * as styles from "../styles/sharedStyles.module.css";
 import { Slide, useScrollTrigger } from "@material-ui/core";
+import Fab from "@material-ui/core/Fab";
+import clsx from "clsx";
+import MyResume from "../images/Nabeel Asghar Resume 2021.pdf";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,11 +21,30 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
+  buttonRoot: {
+    background: "rgba(134, 194, 50, 0.15)",
+    borderRadius: 3,
+    border: "2px solid #86c232",
+    color: "white",
+    height: 48,
+    padding: "0 30px",
+  },
 }));
+
+const StyledFab = styled(Fab)({
+  background: "transparent",
+  color: " #86c232",
+  border: "3px solid #86c232",
+  " &:hover": {
+    background: "transparent",
+  },
+});
 
 function HideOnScroll(props) {
   const { children, window } = props;
-  const trigger = useScrollTrigger({ target: window ? window() : undefined });
+  const trigger = useScrollTrigger({
+    target: window && window ? window() : undefined,
+  });
 
   return (
     <Slide appear={false} direction="down" in={!trigger}>
@@ -36,18 +58,44 @@ const Navbar = (props) => {
 
   return (
     <HideOnScroll {...props}>
-      <AppBar style={{ background: "#222629" }}>
-        <Toolbar>
-          <Typography
-            variant="h6"
-            className={`${classes.title} ${styles.darkerFont}`}
+      <AppBar
+        style={{
+          background: "rgba(34, 38, 41, 0.5)",
+          height: 80,
+          backdropFilter: "blur(20px)",
+        }}
+        elevation={0}
+      >
+        <Toolbar style={{ height: 100 }}>
+          <div
+            style={{
+              color: "white",
+              flexGrow: 1,
+            }}
+            data-sal="slide-down"
+            data-sal-delay="400"
+            data-sal-easing="ease"
           >
-            LOGO
-          </Typography>
-          <Button className={classes.menuButton}>ITEM 1</Button>
-          <Button className={classes.menuButton}>ITEM 2</Button>
-          <Button className={classes.menuButton}>ITEM 3</Button>
-          <Button className={classes.menuButton}>ITEM 4</Button>
+            <StyledFab color="secondary">N.A.</StyledFab>
+          </div>
+          <a
+            href={MyResume}
+            target={"_blank"}
+            style={{ textDecoration: "none" }}
+          >
+            <Button
+              classes={{
+                root: classes.buttonRoot,
+              }}
+            >
+              <Typography
+                variant={"button"}
+                style={{ color: "#86c232", textDecoration: "none" }}
+              >
+                Resume
+              </Typography>
+            </Button>
+          </a>
         </Toolbar>
       </AppBar>
     </HideOnScroll>

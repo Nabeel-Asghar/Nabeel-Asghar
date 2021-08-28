@@ -20,13 +20,19 @@ import Navbar from "../components/Navbar";
 const pageStyles = {
   color: "#232129",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  padding: "0px 150px",
+  padding: "50px 150px",
 };
 
 const mediumPageStyles = {
   color: "#232129",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  padding: "0px 100px",
+  padding: "50px 100px",
+};
+
+const smallPageStyles = {
+  color: "#232129",
+  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  padding: "75px 30px",
 };
 
 const body = {
@@ -41,20 +47,10 @@ const bodySpacing = {
   minHeight: "100vh",
 };
 
-const StyledFab = styled(Fab)({
-  background: "transparent",
-  color: " #86c232",
-  margin: 10,
-  border: "3px solid #86c232",
-  " &:hover": {
-    background: "transparent",
-  },
-});
-
 let theme = createMuiTheme({});
 theme = responsiveFontSizes(theme, {
   breakpoints: ["md", "lg"],
-  factor: 3,
+  factor: 2,
 });
 
 // markup
@@ -65,24 +61,17 @@ const IndexPage = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <div style={{ marginLeft: 20 }}>
-        <div
-          style={{
-            position: "fixed",
-            color: "white",
-            marginTop: 30,
-          }}
-          data-sal="slide-down"
-          data-sal-delay="400"
-          data-sal-easing="ease"
-        >
-          <StyledFab color="secondary" className={styles.button}>
-            N.A.
-          </StyledFab>
-        </div>
-        {!breakpoints.md && <SideBar />}
-      </div>
-      <main style={!breakpoints.md ? pageStyles : mediumPageStyles}>
+      <Navbar />
+      {!breakpoints.md && <SideBar />}
+      <main
+        style={
+          breakpoints.sm || breakpoints.xs
+            ? smallPageStyles
+            : breakpoints.md
+            ? mediumPageStyles
+            : pageStyles
+        }
+      >
         <Grid container direction={"row"}>
           <Grid item md={12} sm={12}>
             <title>Home Page</title>
