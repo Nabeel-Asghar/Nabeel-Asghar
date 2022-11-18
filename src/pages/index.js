@@ -32,7 +32,7 @@ const mediumPageStyles = {
 const smallPageStyles = {
   color: "#232129",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  padding: "75px 30px",
+  padding: "50px 15px",
 };
 
 const body = {
@@ -50,18 +50,15 @@ const bodySpacing = {
 let theme = createMuiTheme({});
 theme = responsiveFontSizes(theme, {
   breakpoints: ["md", "lg"],
-  factor: 2,
+  factor: 4,
 });
 
-// markup
 const IndexPage = () => {
   const breakpoints = useBreakpoint();
 
-  console.log(breakpoints.md);
-
   return (
     <ThemeProvider theme={theme}>
-      <Navbar />
+      <Navbar fullScreen={!breakpoints.md} />
       {!breakpoints.md && <SideBar />}
       <main
         style={
@@ -74,7 +71,7 @@ const IndexPage = () => {
       >
         <Grid container direction={"row"}>
           <Grid item md={12} sm={12}>
-            <title>Home Page</title>
+            <title>Nabeel Asghar</title>
             <div style={body}>
               <Intro fullScreen={!breakpoints.md} />
             </div>

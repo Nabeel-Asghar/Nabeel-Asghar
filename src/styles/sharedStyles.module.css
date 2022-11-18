@@ -10,6 +10,11 @@
   color: #86c232;
 }
 
+.coloredFontCapitalize {
+  color: #86c232;
+  text-transform: capitalize;
+}
+
 .gridContainer {
   min-height: calc(100vh - 64px);
   padding: 25px 0px;

@@ -12,6 +12,7 @@ import Chip from "@material-ui/core/Chip";
 import { makeStyles } from "@material-ui/core/styles";
 import { Divider, Typography } from "@material-ui/core";
 import { HeaderDivider } from "./HeaderDivider";
+import { AirplanemodeActive } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,11 +34,51 @@ const Timeline = (props) => {
       <VerticalTimeline className={styles.timelineContainer}>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
+          contentStyle={{ background: "#265570", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid #fff" }}
+          date={
+            <div style={{ paddingLeft: 10, fontSize: 18 }}>
+              Nov 2021 - Present
+            </div>
+          }
+          icon={
+            <AirplanemodeActive
+              style={{
+                fontSize: 40,
+                width: 40,
+                height: 40,
+                marginLeft: -20,
+                marginTop: -20,
+              }}
+            />
+          }
+          iconStyle={{
+            background: "#6b6e70",
+            color: "#fff",
+          }}
+        >
+          <div className={classes.root}>
+            <Chip label="Golang" />
+            <Chip label="React" />
+            <Chip label="PostgreSQL" />
+          </div>
+          <h3 className="vertical-timeline-element-title">Software Engineer</h3>
+          <h4 className="vertical-timeline-element-subtitle">Airspace Link</h4>
+          <p>
+            Worked on the Data Products team to architect and deliver features
+            worth over $5 million in contracts for clients such as UPS, Sprite,
+            Google Wing, and Amazon for their drone delivery programs.
+            {/*• Developed using Golang, React,*/}
+            {/*and Azure functions.*/}
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
           contentStyle={{ background: "#4f7026", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid #fff" }}
           date={
             <div style={{ paddingLeft: 10, fontSize: 18 }}>
-              Sept 2020 - Present
+              Sept 2020 - Nov 2021
             </div>
           }
           icon={

@@ -91,10 +91,10 @@ const Intro = (props) => {
             data-sal-delay="800"
             data-sal-easing="ease"
           >
-            Currently, I'm a software engineer on the Ecommerce Marketplace team
-            at <span className={styles.coloredFont}>Ford Motor Company</span>{" "}
-            where we created the flow for buying vehicles online for the first
-            time ever in Ford's history!
+            Currently, I'm a software engineer on the Data Products team at{" "}
+            <span className={styles.coloredFont}>Airspace Link</span> where we
+            created a way for companies and governments to control drones and
+            drone deliveries.
           </Typography>
           <a
             href="mailto:nabeel.asghar156@gmail.com"

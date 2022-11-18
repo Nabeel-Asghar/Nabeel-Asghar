@@ -59,9 +59,10 @@ const AboutMe = () => {
             >
               I graduated from{" "}
               <span className={styles.coloredFont}>Wayne State University</span>{" "}
-              in 2020 and have been working at{" "}
-              <span className={styles.coloredFont}>Ford Motor Company</span>{" "}
-              since. I have a project in works called{" "}
+              in 2020 and have worked at{" "}
+              <span className={styles.coloredFont}>Ford Motor Company</span> and{" "}
+              <span className={styles.coloredFont}>Airspace Link</span>. I have
+              a project in works called{" "}
               <a
                 target={"_blank"}
                 href={"https://photospot.site/"}
